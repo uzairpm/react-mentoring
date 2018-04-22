@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class Es6Component extends React.Component {
+class Es6Component extends Component {
     constructor(props) {
         super(props);
         this.sayHi = this.sayHi.bind(this);
