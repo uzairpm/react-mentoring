@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+// const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
     entry: [
@@ -24,10 +25,13 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin({
             PRODUCTION: JSON.stringify(true),
-            VERSION: JSON.stringify("1.0"),
-            'process.env.NODE_ENV': JSON.stringify('production')
+            VERSION: JSON.stringify('1.0'),
+            'process.env.NODE_ENV': JSON.stringify('"production"')
         }),
         new UglifyJSPlugin()
+        /* new CompressionPlugin({
+            algorithm: 'gzip'
+        }) */
     ],
     devServer: {
         contentBase: './dist',

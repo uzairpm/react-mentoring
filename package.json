@@ -4,13 +4,18 @@
     "description": "App built as task 2 for the react mentoring program",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --config ./webpack.config.js --mode production --env.prod",
-        "start:dev": "webpack-dev-server --config ./webpack.config.dev.js --mode development --env.dev",
-        "start": "webpack-dev-server --config ./webpack.config.js --mode production --env.prod",
-        "test": "jest"
+        "build": "webpack --config ./webpack.config.js --mode production --env.production",
+        "start:dev": "webpack-dev-server --config ./webpack.config.dev.js --mode development --env.development",
+        "start": "webpack-dev-server --config ./webpack.config.js --mode production --env.production",
+        "test": "jest",
+        "test:coverage": "jest --coverage"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "react",
+        "webpack",
+        "babel"
+    ],
+    "author": "Uzair Ahmed",
     "license": "ISC",
     "devDependencies": {
         "babel-core": "^6.26.0",
@@ -19,9 +24,13 @@
         "babel-preset-env": "^1.6.1",
         "babel-preset-react": "^6.24.1",
         "babel-preset-stage-2": "^6.24.1",
+        "compression-webpack-plugin": "^1.1.11",
         "jest": "^22.4.3",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
         "react-test-renderer": "^16.3.2",
         "webpack": "^4.5.0",
+        "webpack-bundle-analyzer": "^2.11.1",
         "webpack-cli": "^2.0.14",
         "webpack-dev-server": "^3.1.3"
     },
