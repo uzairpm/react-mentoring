@@ -1,19 +1,22 @@
 {
-    "name": "react_task2",
+    "name": "task2",
     "version": "1.0.0",
     "description": "App built as task 2 for the react mentoring program",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --config ./webpack.config.js --mode production --env.production",
-        "start:dev": "webpack-dev-server --config ./webpack.config.dev.js --mode development --env.development",
-        "start": "webpack-dev-server --config ./webpack.config.js --mode production --env.production",
+        "build": "webpack --config ./webpack.config.js --mode production",
+        "wds": "webpack-dev-server",
+        "start:dev": "npm run wds -- --config ./webpack.config.dev.js --mode development",
+        "start": "npm run wds -- --config ./webpack.config.js --mode production",
         "test": "jest",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "npm run test -- --coverage"
     },
     "keywords": [
         "react",
         "webpack",
-        "babel"
+        "babel",
+        "jest",
+        "enzyme"
     ],
     "author": "Uzair Ahmed",
     "license": "ISC",

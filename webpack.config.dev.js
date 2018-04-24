@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: [
@@ -27,7 +26,6 @@ module.exports = {
             VERSION: JSON.stringify('1.0'),
             'process.env.NODE_ENV': JSON.stringify('"development"')
         })
-        // new BundleAnalyzerPlugin()
     ],
     devtool: 'inline-source-map',
     devServer: {

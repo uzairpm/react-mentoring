@@ -1,7 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-// const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
     entry: [
@@ -29,12 +28,5 @@ module.exports = {
             'process.env.NODE_ENV': JSON.stringify('"production"')
         }),
         new UglifyJSPlugin()
-        /* new CompressionPlugin({
-            algorithm: 'gzip'
-        }) */
-    ],
-    devServer: {
-        contentBase: './dist',
-        port: 3000
-    }
+    ]
 };
