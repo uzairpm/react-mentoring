@@ -1,0 +1,10 @@
+.jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+}
+.searchInput {
+    border-bottom: 2px solid #fa6c85;
+}
+.widerButton {
+    padding: 0.25rem 2rem;
+}

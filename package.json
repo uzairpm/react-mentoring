@@ -1,5 +1,5 @@
 {
-    "name": "task2",
+    "name": "task3",
     "version": "1.0.0",
     "description": "App built as task 2 for the react mentoring program",
     "main": "index.js",
@@ -18,6 +18,10 @@
         "jest",
         "enzyme"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uzairpm/react-mentoring"
+    },
     "author": "Uzair Ahmed",
     "license": "ISC",
     "devDependencies": {
@@ -28,10 +32,12 @@
         "babel-preset-react": "^6.24.1",
         "babel-preset-stage-2": "^6.24.1",
         "compression-webpack-plugin": "^1.1.11",
-        "jest": "^22.4.3",
+        "css-loader": "^0.28.11",
         "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "^1.1.1",
+        "jest": "^22.4.3",
         "react-test-renderer": "^16.3.2",
+        "style-loader": "^0.21.0",
         "webpack": "^4.5.0",
         "webpack-bundle-analyzer": "^2.11.1",
         "webpack-cli": "^2.0.14",
