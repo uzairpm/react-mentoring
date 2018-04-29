@@ -6,8 +6,13 @@ import './searchbox.css';
 export default class SearchBox extends Component {
     constructor(props) {
         super(props);
+        this._handleKeyPress = this._handleKeyPress.bind(this);
     }
-
+    _handleKeyPress(e) {
+        if (e.key === 'Enter') {
+            this.props.searchClick();
+        }
+    }
     render() {
         return (
             <div className="container">
@@ -17,7 +22,8 @@ export default class SearchBox extends Component {
                         <input type="text" 
                             className="form-control rounded-0 searchInput"
                             onChange={ this.props.valChange }
-                            value={ this.props.value }/>
+                            value={ this.props.value }
+                            onKeyPress={this._handleKeyPress} />
                     </div>
                     <label className="mr-3">SEARCH BY</label>
                     <Button label="TITLE"

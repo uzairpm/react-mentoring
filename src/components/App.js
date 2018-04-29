@@ -31,6 +31,11 @@ export default class App extends Component {
         } else {
             url += 'genres';
         }
+        if (this.state.sortByReleaseDate === true) {
+            url += '&sortBy=release_date&sortOrder=desc';
+        } else {
+            url += '&sortBy=vote_average&sortOrder=desc';
+        }
         fetch(url, {
             method: 'GET',
             headers: {
@@ -45,7 +50,6 @@ export default class App extends Component {
         });
     }
     searchClick() {
-        console.log('attempting to search');
         this.loadData();
     }
     titleClick() {
@@ -55,10 +59,14 @@ export default class App extends Component {
         this.setState({ titleActive: false });
     }
     releaseDateClick() {
-        this.setState({ sortByReleaseDate: true });
+        this.setState({ sortByReleaseDate: true }, () => {
+            this.loadData();
+        });
     }
     ratingClick() {
-        this.setState({ sortByReleaseDate: false });
+        this.setState({ sortByReleaseDate: false }, () => {
+            this.loadData();
+        });
     }
     valueChangeHandler(e) {
         this.setState({
@@ -75,7 +83,7 @@ export default class App extends Component {
                     titleClick={this.titleClick}
                     genreClick={this.genreClick}
                     searchClick={this.searchClick}/>
-                <SearchResults movies={this.state.movies} releaseDate={this.sortByReleaseDate}
+                <SearchResults movies={this.state.movies} releaseDate={this.state.sortByReleaseDate}
                     releaseDateClick={this.releaseDateClick}
                     ratingClick={this.ratingClick} />
             </div>

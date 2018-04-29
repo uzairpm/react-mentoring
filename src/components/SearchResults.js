@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import Button from './Common/Button';
 import MovieCard from './MovieCard';
 import SearchFilter from './SearchFilter';
+import Footer from './Footer/Footer';
+
 import './searchresults.css';
 
 export default class SearchResults extends Component {
@@ -17,7 +19,7 @@ export default class SearchResults extends Component {
         let view = '';
         if (this.props.movies.length === 0) {
             view = (
-                <h1 className="display-2 text-center">No films found</h1>
+                <h1 className="display-2 text-center mt-5">No films found</h1>
             );
         } else {
             view = (
@@ -29,6 +31,7 @@ export default class SearchResults extends Component {
                     <div className="row">
                         { movieCards }
                     </div>
+                    <Footer />
                 </div>
             );
         }
