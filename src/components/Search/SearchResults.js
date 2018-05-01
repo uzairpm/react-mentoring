@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import Button from './Common/Button';
-import MovieCard from './MovieCard';
+import Button from '../Common/Button';
+import MovieCard from '../Movie/MovieCard';
 import SearchFilter from './SearchFilter';
-import Footer from './Footer/Footer';
+import Footer from '../Footer/Footer';
 
 import './searchresults.css';
 
@@ -11,7 +11,6 @@ export default class SearchResults extends Component {
     constructor(props) {
         super(props);
     }
-    
     render() {
         const movieCards = this.props.movies.map(movie => {
             return <MovieCard key={movie.id} movie={movie} />

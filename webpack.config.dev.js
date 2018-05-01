@@ -27,7 +27,7 @@ module.exports = {
         new webpack.DefinePlugin({
             PRODUCTION: JSON.stringify(false),
             VERSION: JSON.stringify('1.0'),
-            'process.env.NODE_ENV': JSON.stringify('"development"')
+            'process.env.NODE_ENV': JSON.stringify('development')
         })
     ],
     devtool: 'inline-source-map',

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Button from './Common/Button';
+import Button from '../Common/Button';
 import './searchbox.css';
 
 export default class SearchBox extends Component {

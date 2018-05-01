@@ -11,6 +11,9 @@ module.exports = {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: ['babel-loader']
+        }, {
+            test: /\.css$/,
+            use: [ 'style-loader', 'css-loader' ]
         }]
     },
     resolve: {
@@ -25,7 +28,7 @@ module.exports = {
         new webpack.DefinePlugin({
             PRODUCTION: JSON.stringify(true),
             VERSION: JSON.stringify('1.0'),
-            'process.env.NODE_ENV': JSON.stringify('"production"')
+            'process.env.NODE_ENV': JSON.stringify('production')
         }),
         new UglifyJSPlugin()
     ]

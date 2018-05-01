@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 
 import { Route, Link } from "react-router-dom";
 
-import Header from './Header/Header';
-import SearchBox from './SearchBox';
-import SearchResults from './SearchResults';
+import Header from '../Header/Header';
+import SearchBox from '../Search/SearchBox';
+import SearchResults from '../Search/SearchResults';
 
-export default class App extends Component {
+export default class MainPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
