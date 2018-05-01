@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import { Route, Link } from "react-router-dom";
+
 import Header from './Header/Header';
 import SearchBox from './SearchBox';
 import SearchResults from './SearchResults';
@@ -22,7 +24,6 @@ export default class App extends Component {
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
     componentDidMount() {
-        
     }
     loadData() {
         let url = 'http://react-cdp-api.herokuapp.com/movies?search='+this.state.searchText+'&searchBy=';
@@ -36,18 +37,13 @@ export default class App extends Component {
         } else {
             url += '&sortBy=vote_average&sortOrder=desc';
         }
-        fetch(url, {
-            method: 'GET',
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-        .then(res => res.json())
-        .then(response => {
-            this.setState({
-                movies: response.data
+        fetch(url)
+            .then(res => res.json())
+            .then(response => {
+                this.setState({
+                    movies: response.data
+                });
             });
-        });
     }
     searchClick() {
         this.loadData();
@@ -83,10 +79,13 @@ export default class App extends Component {
                     titleClick={this.titleClick}
                     genreClick={this.genreClick}
                     searchClick={this.searchClick}/>
-                <SearchResults movies={this.state.movies} releaseDate={this.state.sortByReleaseDate}
+                <SearchResults movies={this.state.movies}
+                    releaseDate={this.state.sortByReleaseDate}
                     releaseDateClick={this.releaseDateClick}
                     ratingClick={this.ratingClick} />
             </div>
         );
     }
 }
+
+/*<Link to="/film/1">Yahoo</Link>*/

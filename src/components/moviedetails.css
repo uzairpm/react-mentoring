@@ -1,0 +1,13 @@
+.albumArt {
+    width: 250px;
+    border-radius: 5px;
+}
+.padding25 {
+    padding: 25px;
+}
+.movieTitle {
+    color: #fa6c85;
+}
+.movieDesc {
+    font-size: 1rem;
+}

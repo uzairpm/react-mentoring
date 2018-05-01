@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from "react-router-dom";
 
 import Button from '../Common/Button';
 import './header.css';
@@ -17,10 +18,7 @@ export default class Header extends Component {
         if (this.props.showSearchButton === true) {
             view = (
                 <form className="form-inline">
-                    <Button type="submit"
-                        label="SEARCH"
-                        className="btn btn-primary btn-sm widerButton"
-                        clickHandler={this.searchClick} />
+                    <Link to="/" className="btn btn-primary btn-sm widerButton">SEARCH</Link>
                 </form>
             );
         }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import Button from './Common/Button';
 
@@ -19,5 +20,11 @@ const SearchFilter = (props) => {
             </div>
         </div>
     );
+};
+SearchFilter.propTypes = {
+    resultCount: PropTypes.number.isRequired,
+    releaseDateClick: PropTypes.func.isRequired,
+    ratingClick: PropTypes.func.isRequired,
+    releaseDate: PropTypes.bool
 };
 export default SearchFilter;
