@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 import { Route, Link } from "react-router-dom";
 
+import Constants from '../Common/constants';
 import Header from '../Header/Header';
 import SearchBox from '../Search/SearchBox';
 import SearchResults from '../Search/SearchResults';
@@ -10,7 +11,6 @@ export default class MainPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showSearchButtonOnHeader: false,
             movies: [],
             titleActive: true,
             sortByReleaseDate: true,
@@ -23,10 +23,8 @@ export default class MainPage extends Component {
         this.ratingClick = this.ratingClick.bind(this);
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
-    componentDidMount() {
-    }
-    loadData() {
-        let url = 'http://react-cdp-api.herokuapp.com/movies?search='+this.state.searchText+'&searchBy=';
+    refreshSearchResults() {
+        let url = Constants.baseURL + '?search='+this.state.searchText+'&searchBy=';
         if(this.state.titleActive === true) {
             url += 'title';
         } else {
@@ -46,7 +44,7 @@ export default class MainPage extends Component {
             });
     }
     searchClick() {
-        this.loadData();
+        this.refreshSearchResults();
     }
     titleClick() {
         this.setState({ titleActive: true });
@@ -56,12 +54,12 @@ export default class MainPage extends Component {
     }
     releaseDateClick() {
         this.setState({ sortByReleaseDate: true }, () => {
-            this.loadData();
+            this.refreshSearchResults();
         });
     }
     ratingClick() {
         this.setState({ sortByReleaseDate: false }, () => {
-            this.loadData();
+            this.refreshSearchResults();
         });
     }
     valueChangeHandler(e) {
@@ -72,7 +70,7 @@ export default class MainPage extends Component {
     render() {
         return (
             <div>
-                <Header showSearchButton={this.state.showSearchButtonOnHeader} />
+                <Header showSearchButton={false} />
                 <SearchBox titleActive={this.state.titleActive}
                     value={this.state.searchText}
                     valChange={this.valueChangeHandler}
@@ -87,5 +85,3 @@ export default class MainPage extends Component {
         );
     }
 }
-
-/*<Link to="/film/1">Yahoo</Link>*/

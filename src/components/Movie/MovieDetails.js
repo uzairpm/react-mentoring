@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+import Constants from '../Common/constants';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import SimilarMovies from './SimilarMovies';
@@ -10,14 +11,13 @@ export default class MovieDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showSearchButtonOnHeader: true,
             movie: {},
             selectedGenre: '',
             similarMovies: []
         };
     }
     componentDidMount() {
-        let url = 'http://react-cdp-api.herokuapp.com/movies/'+this.props.match.params.id;
+        let url = Constants.baseURL + '/' + this.props.match.params.id;
         fetch(url)
             .then(res => res.json())
             .then(response => {
@@ -28,7 +28,7 @@ export default class MovieDetails extends Component {
             });
     }
     componentWillReceiveProps(nextProps) {
-        let url = 'http://react-cdp-api.herokuapp.com/movies/'+nextProps.match.params.id;
+        let url = Constants.baseURL + '/' + nextProps.match.params.id;
         fetch(url)
             .then(res => res.json())
             .then(response => {
@@ -39,7 +39,7 @@ export default class MovieDetails extends Component {
             });
     }
     fetchSimilarMovies(genre) {
-        let url = 'http://react-cdp-api.herokuapp.com/movies?search='+genre+'&searchBy=genres&sortBy=release_date&sortOrder=desc';
+        let url = Constants.baseURL + '?search='+genre+'&searchBy=genres&sortBy=release_date&sortOrder=desc';
         fetch(url)
             .then(res => res.json())
             .then(response => {
@@ -52,7 +52,7 @@ export default class MovieDetails extends Component {
     render() {
         return (
             <div>
-                <Header showSearchButton={this.state.showSearchButtonOnHeader} />
+                <Header showSearchButton={true} />
                 <MovieBanner movie={this.state.movie} />
                 <SimilarMovies genre={this.state.selectedGenre} movies={this.state.similarMovies} />
                 <Footer />

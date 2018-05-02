@@ -12,13 +12,10 @@ export default class SearchResults extends Component {
         super(props);
     }
     render() {
-        const movieCards = this.props.movies.map(movie => {
-            return <MovieCard key={movie.id} movie={movie} />
-        });
         let view = '';
         if (this.props.movies.length === 0) {
             view = (
-                <h1 className="display-2 text-center mt-5">No films found</h1>
+                <h1 className="display-3 text-center mt-5">No films found</h1>
             );
         } else {
             view = (
@@ -28,7 +25,11 @@ export default class SearchResults extends Component {
                         releaseDateClick={this.props.releaseDateClick}
                         ratingClick={this.props.ratingClick} />
                     <div className="row">
-                        { movieCards }
+                        {
+                            this.props.movies.map(movie => {
+                                return <MovieCard key={movie.id} movie={movie} />
+                            })
+                        }
                     </div>
                     <Footer />
                 </div>
