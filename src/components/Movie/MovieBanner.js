@@ -11,8 +11,8 @@ const MovieBanner = (props) => {
                             <img className="albumArt" src={props.movie.poster_path} />
                         </div>
                         <div className="col-sm-9 col-md-9 col-lg-9 padding25">
-                            <h4 className="movieTitle">{props.movie.title}</h4>
-                            <small className="text-muted">{props.movie.genres && props.movie.genres.join(', ')}</small>
+                            <h4 className="movieTitle mr-3">{props.movie.title}</h4><span className="avgRating">{props.movie.vote_average}</span>
+                            <p className="text-muted">{props.movie.genres && props.movie.genres.join(', ')}</p>
                             <div className="mt-2">
                                 <b className="mr-3">{props.movie.release_date && props.movie.release_date.substr(0,4)}</b>
                                 <b>{props.movie.runtime} mins</b>
