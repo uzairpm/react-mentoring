@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-
 import { Route, Link } from "react-router-dom";
 
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
-import SearchBox from '../Search/SearchBox';
 import SearchResults from '../Search/SearchResults';
 
 export default class MainPage extends Component {
@@ -62,13 +60,13 @@ export default class MainPage extends Component {
     render() {
         return (
             <div>
-                <Header showSearchButton={false} />
-                <SearchBox titleActive={this.state.titleActive}
+                <Header showSearchButton={false}
+                    titleActive={this.state.titleActive}
                     value={this.state.searchText}
-                    valChange={this.valueChangeHandler}
+                    valueChangeHandler={this.valueChangeHandler}
                     titleClick={this.titleClick}
                     genreClick={this.genreClick}
-                    searchClick={this.searchClick}/>
+                    searchClick={this.searchClick} />
                 <SearchResults movies={this.state.movies}
                     releaseDate={this.state.sortByReleaseDate}
                     releaseDateClick={this.releaseDateClick}

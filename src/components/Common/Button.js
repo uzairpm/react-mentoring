@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classname from 'classname';
 
 const DELAY = 300;
 const LOADER_DELAY = 900;
@@ -39,7 +40,7 @@ export default class Button extends Component {
     }
     render() {
         const { type, style, className, disabled, label } = this.props;
-        const classNames = !className ? CLASS_NAME : `${CLASS_NAME} ${className}`;
+        const classNames = classname(className, CLASS_NAME);
 
         return (
             <button
