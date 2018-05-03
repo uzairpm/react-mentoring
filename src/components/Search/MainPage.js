@@ -24,18 +24,10 @@ export default class MainPage extends Component {
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
     refreshSearchResults() {
-        let url = Constants.baseURL + '?search='+this.state.searchText+'&searchBy=';
-        if(this.state.titleActive === true) {
-            url += 'title';
-        } else {
-            url += 'genres';
-        }
-        if (this.state.sortByReleaseDate === true) {
-            url += '&sortBy=release_date&sortOrder=desc';
-        } else {
-            url += '&sortBy=vote_average&sortOrder=desc';
-        }
-        fetch(url)
+        let titleOrGenre = (this.state.titleActive === true) ? 'title' : 'genres';
+        let dateOrVote = (this.state.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
+        let urlStr = `${Constants.baseURL}?search=${this.state.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
+        fetch(urlStr)
             .then(res => res.json())
             .then(response => {
                 this.setState({

@@ -17,7 +17,7 @@ export default class MovieDetails extends Component {
         };
     }
     componentDidMount() {
-        let url = Constants.baseURL + '/' + this.props.match.params.id;
+        let url = `${Constants.baseURL}/${this.props.match.params.id}`;
         fetch(url)
             .then(res => res.json())
             .then(response => {
@@ -28,7 +28,7 @@ export default class MovieDetails extends Component {
             });
     }
     componentWillReceiveProps(nextProps) {
-        let url = Constants.baseURL + '/' + nextProps.match.params.id;
+        let url = `${Constants.baseURL}/${nextProps.match.params.id}`;
         fetch(url)
             .then(res => res.json())
             .then(response => {
@@ -39,7 +39,7 @@ export default class MovieDetails extends Component {
             });
     }
     fetchSimilarMovies(genre) {
-        let url = Constants.baseURL + '?search='+genre+'&searchBy=genres&sortBy=release_date&sortOrder=desc';
+        let url = `${Constants.baseURL}?search=${genre}&searchBy=genres&sortBy=release_date&sortOrder=desc`;
         fetch(url)
             .then(res => res.json())
             .then(response => {
