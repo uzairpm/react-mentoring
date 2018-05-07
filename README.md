@@ -1,16 +1,18 @@
 The objectives of this branch are,
-1) Create package.json file and install React, Redux, React-Redux, React-Router, Jest.
+1) Coverage > 60% Write tests using enzyme and jest
 
-2) Install and configure webpack & babel to get build artifact by running npm command
+2) Use snapshot testing
 
-3) Set DEV and PROD build configuration. Use env variables, dev server, optimizations for PROD build
+3) Use coverage tool
 
-4) Set up testing. You should have test command in your package.json file, which will run your future tests. Don’t use React boilerplate for this task.
+$) Write at least one e2e test using library from the list: Cypress, CasperJS, Protractor, Nightwatch, Webdriver
 
 Available commands to run:
 
 ### `npm run start`
 ### `npm run start:dev`
 ### `npm run test`
+### `npm run test:coverage`
+### `npm run cypress:open`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
