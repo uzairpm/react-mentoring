@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import classname from 'classname';
 
-// const DELAY = 300;
-// const LOADER_DELAY = 900;
 const CLASS_NAME = 'btn';
 
 export default class Button extends Component {
@@ -10,7 +8,6 @@ export default class Button extends Component {
         super(props);
         this.state = {
             disabled: false
-            // showLoading: false,
         };
     }
     onClick(event) {
@@ -20,7 +17,13 @@ export default class Button extends Component {
         clickHandler();
     }
     render() {
-        const { type, style, className, disabled, label } = this.props;
+        const {
+            type,
+            style,
+            className,
+            disabled,
+            label
+        } = this.props;
         const classNames = classname(className, CLASS_NAME);
 
         return (

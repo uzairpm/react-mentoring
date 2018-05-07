@@ -15,19 +15,19 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": <Link
-        className="btn btn-primary btn-sm widerButton"
-        replace={false}
-        to="/"
-      >
-        SEARCH
-      </Link>,
-      "className": "form-inline",
+      "children": "SEARCH",
+      "className": "btn btn-primary btn-sm widerButton",
+      "replace": false,
+      "to": "/",
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": "SEARCH",
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
@@ -40,40 +40,6 @@ ShallowWrapper {
       "ref": null,
       "rendered": "SEARCH",
       "type": [Function],
-    },
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <Link
-          className="btn btn-primary btn-sm widerButton"
-          replace={false}
-          to="/"
-        >
-          SEARCH
-        </Link>,
-        "className": "form-inline",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "SEARCH",
-          "className": "btn btn-primary btn-sm widerButton",
-          "replace": false,
-          "to": "/",
-        },
-        "ref": null,
-        "rendered": "SEARCH",
-        "type": [Function],
-      },
-      "type": "form",
     },
   ],
   Symbol(enzyme.__options__): Object {
