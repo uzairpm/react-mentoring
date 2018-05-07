@@ -5,7 +5,7 @@ The objectives of this branch are,
 
 3) Use coverage tool
 
-$) Write at least one e2e test using library from the list: Cypress, CasperJS, Protractor, Nightwatch, Webdriver
+4) Write at least one e2e test using library from the list: Cypress, CasperJS, Protractor, Nightwatch, Webdriver
 
 Available commands to run:
 
