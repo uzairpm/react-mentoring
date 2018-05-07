@@ -1,0 +1,883 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Component creation MovieBanner component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieBanner
+    movie={
+      Object {
+        "genres": Array [
+          "Action",
+          "Drama",
+        ],
+        "overview": "A feel good movie",
+        "poster_path": "",
+        "release_date": "2017-10-10",
+        "runtime": 108,
+        "title": "Feel Good",
+        "vote_average": 8,
+      }
+    }
+    vote_average={0}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card text-white bg-dark"
+      >
+        <div
+          className="card-body"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-sm-3 col-md-3 col-lg-3"
+            >
+              <img
+                className="albumArt"
+                src=""
+              />
+            </div>
+            <div
+              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            >
+              <h4
+                className="movieTitle mr-3"
+              >
+                Feel Good
+              </h4>
+              <span
+                className="avgRating"
+              >
+                8
+              </span>
+              <p
+                className="text-muted"
+              >
+                Action, Drama
+              </p>
+              <div
+                className="mt-2"
+              >
+                <b
+                  className="mr-3"
+                >
+                  2017
+                </b>
+                <b>
+                  108
+                   mins
+                </b>
+              </div>
+              <p
+                className="movieDesc mt-3"
+              >
+                A feel good movie
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>,
+      "className": "container mt-2",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-body"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="col-sm-3 col-md-3 col-lg-3"
+            >
+              <img
+                className="albumArt"
+                src=""
+              />
+            </div>
+            <div
+              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            >
+              <h4
+                className="movieTitle mr-3"
+              >
+                Feel Good
+              </h4>
+              <span
+                className="avgRating"
+              >
+                8
+              </span>
+              <p
+                className="text-muted"
+              >
+                Action, Drama
+              </p>
+              <div
+                className="mt-2"
+              >
+                <b
+                  className="mr-3"
+                >
+                  2017
+                </b>
+                <b>
+                  108
+                   mins
+                </b>
+              </div>
+              <p
+                className="movieDesc mt-3"
+              >
+                A feel good movie
+              </p>
+            </div>
+          </div>
+        </div>,
+        "className": "card text-white bg-dark",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row"
+          >
+            <div
+              className="col-sm-3 col-md-3 col-lg-3"
+            >
+              <img
+                className="albumArt"
+                src=""
+              />
+            </div>
+            <div
+              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            >
+              <h4
+                className="movieTitle mr-3"
+              >
+                Feel Good
+              </h4>
+              <span
+                className="avgRating"
+              >
+                8
+              </span>
+              <p
+                className="text-muted"
+              >
+                Action, Drama
+              </p>
+              <div
+                className="mt-2"
+              >
+                <b
+                  className="mr-3"
+                >
+                  2017
+                </b>
+                <b>
+                  108
+                   mins
+                </b>
+              </div>
+              <p
+                className="movieDesc mt-3"
+              >
+                A feel good movie
+              </p>
+            </div>
+          </div>,
+          "className": "card-body",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-sm-3 col-md-3 col-lg-3"
+              >
+                <img
+                  className="albumArt"
+                  src=""
+                />
+              </div>,
+              <div
+                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              >
+                <h4
+                  className="movieTitle mr-3"
+                >
+                  Feel Good
+                </h4>
+                <span
+                  className="avgRating"
+                >
+                  8
+                </span>
+                <p
+                  className="text-muted"
+                >
+                  Action, Drama
+                </p>
+                <div
+                  className="mt-2"
+                >
+                  <b
+                    className="mr-3"
+                  >
+                    2017
+                  </b>
+                  <b>
+                    108
+                     mins
+                  </b>
+                </div>
+                <p
+                  className="movieDesc mt-3"
+                >
+                  A feel good movie
+                </p>
+              </div>,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  className="albumArt"
+                  src=""
+                />,
+                "className": "col-sm-3 col-md-3 col-lg-3",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "albumArt",
+                  "src": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h4
+                    className="movieTitle mr-3"
+                  >
+                    Feel Good
+                  </h4>,
+                  <span
+                    className="avgRating"
+                  >
+                    8
+                  </span>,
+                  <p
+                    className="text-muted"
+                  >
+                    Action, Drama
+                  </p>,
+                  <div
+                    className="mt-2"
+                  >
+                    <b
+                      className="mr-3"
+                    >
+                      2017
+                    </b>
+                    <b>
+                      108
+                       mins
+                    </b>
+                  </div>,
+                  <p
+                    className="movieDesc mt-3"
+                  >
+                    A feel good movie
+                  </p>,
+                ],
+                "className": "col-sm-9 col-md-9 col-lg-9 padding25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Feel Good",
+                    "className": "movieTitle mr-3",
+                  },
+                  "ref": null,
+                  "rendered": "Feel Good",
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 8,
+                    "className": "avgRating",
+                  },
+                  "ref": null,
+                  "rendered": 8,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Action, Drama",
+                    "className": "text-muted",
+                  },
+                  "ref": null,
+                  "rendered": "Action, Drama",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <b
+                        className="mr-3"
+                      >
+                        2017
+                      </b>,
+                      <b>
+                        108
+                         mins
+                      </b>,
+                    ],
+                    "className": "mt-2",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "2017",
+                        "className": "mr-3",
+                      },
+                      "ref": null,
+                      "rendered": "2017",
+                      "type": "b",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          108,
+                          " mins",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        108,
+                        " mins",
+                      ],
+                      "type": "b",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "A feel good movie",
+                    "className": "movieDesc mt-3",
+                  },
+                  "ref": null,
+                  "rendered": "A feel good movie",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card text-white bg-dark"
+        >
+          <div
+            className="card-body"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-3 col-md-3 col-lg-3"
+              >
+                <img
+                  className="albumArt"
+                  src=""
+                />
+              </div>
+              <div
+                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              >
+                <h4
+                  className="movieTitle mr-3"
+                >
+                  Feel Good
+                </h4>
+                <span
+                  className="avgRating"
+                >
+                  8
+                </span>
+                <p
+                  className="text-muted"
+                >
+                  Action, Drama
+                </p>
+                <div
+                  className="mt-2"
+                >
+                  <b
+                    className="mr-3"
+                  >
+                    2017
+                  </b>
+                  <b>
+                    108
+                     mins
+                  </b>
+                </div>
+                <p
+                  className="movieDesc mt-3"
+                >
+                  A feel good movie
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>,
+        "className": "container mt-2",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card-body"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-sm-3 col-md-3 col-lg-3"
+              >
+                <img
+                  className="albumArt"
+                  src=""
+                />
+              </div>
+              <div
+                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              >
+                <h4
+                  className="movieTitle mr-3"
+                >
+                  Feel Good
+                </h4>
+                <span
+                  className="avgRating"
+                >
+                  8
+                </span>
+                <p
+                  className="text-muted"
+                >
+                  Action, Drama
+                </p>
+                <div
+                  className="mt-2"
+                >
+                  <b
+                    className="mr-3"
+                  >
+                    2017
+                  </b>
+                  <b>
+                    108
+                     mins
+                  </b>
+                </div>
+                <p
+                  className="movieDesc mt-3"
+                >
+                  A feel good movie
+                </p>
+              </div>
+            </div>
+          </div>,
+          "className": "card text-white bg-dark",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="row"
+            >
+              <div
+                className="col-sm-3 col-md-3 col-lg-3"
+              >
+                <img
+                  className="albumArt"
+                  src=""
+                />
+              </div>
+              <div
+                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              >
+                <h4
+                  className="movieTitle mr-3"
+                >
+                  Feel Good
+                </h4>
+                <span
+                  className="avgRating"
+                >
+                  8
+                </span>
+                <p
+                  className="text-muted"
+                >
+                  Action, Drama
+                </p>
+                <div
+                  className="mt-2"
+                >
+                  <b
+                    className="mr-3"
+                  >
+                    2017
+                  </b>
+                  <b>
+                    108
+                     mins
+                  </b>
+                </div>
+                <p
+                  className="movieDesc mt-3"
+                >
+                  A feel good movie
+                </p>
+              </div>
+            </div>,
+            "className": "card-body",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="col-sm-3 col-md-3 col-lg-3"
+                >
+                  <img
+                    className="albumArt"
+                    src=""
+                  />
+                </div>,
+                <div
+                  className="col-sm-9 col-md-9 col-lg-9 padding25"
+                >
+                  <h4
+                    className="movieTitle mr-3"
+                  >
+                    Feel Good
+                  </h4>
+                  <span
+                    className="avgRating"
+                  >
+                    8
+                  </span>
+                  <p
+                    className="text-muted"
+                  >
+                    Action, Drama
+                  </p>
+                  <div
+                    className="mt-2"
+                  >
+                    <b
+                      className="mr-3"
+                    >
+                      2017
+                    </b>
+                    <b>
+                      108
+                       mins
+                    </b>
+                  </div>
+                  <p
+                    className="movieDesc mt-3"
+                  >
+                    A feel good movie
+                  </p>
+                </div>,
+              ],
+              "className": "row",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    className="albumArt"
+                    src=""
+                  />,
+                  "className": "col-sm-3 col-md-3 col-lg-3",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "albumArt",
+                    "src": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h4
+                      className="movieTitle mr-3"
+                    >
+                      Feel Good
+                    </h4>,
+                    <span
+                      className="avgRating"
+                    >
+                      8
+                    </span>,
+                    <p
+                      className="text-muted"
+                    >
+                      Action, Drama
+                    </p>,
+                    <div
+                      className="mt-2"
+                    >
+                      <b
+                        className="mr-3"
+                      >
+                        2017
+                      </b>
+                      <b>
+                        108
+                         mins
+                      </b>
+                    </div>,
+                    <p
+                      className="movieDesc mt-3"
+                    >
+                      A feel good movie
+                    </p>,
+                  ],
+                  "className": "col-sm-9 col-md-9 col-lg-9 padding25",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Feel Good",
+                      "className": "movieTitle mr-3",
+                    },
+                    "ref": null,
+                    "rendered": "Feel Good",
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": 8,
+                      "className": "avgRating",
+                    },
+                    "ref": null,
+                    "rendered": 8,
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Action, Drama",
+                      "className": "text-muted",
+                    },
+                    "ref": null,
+                    "rendered": "Action, Drama",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <b
+                          className="mr-3"
+                        >
+                          2017
+                        </b>,
+                        <b>
+                          108
+                           mins
+                        </b>,
+                      ],
+                      "className": "mt-2",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "2017",
+                          "className": "mr-3",
+                        },
+                        "ref": null,
+                        "rendered": "2017",
+                        "type": "b",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": Array [
+                            108,
+                            " mins",
+                          ],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          108,
+                          " mins",
+                        ],
+                        "type": "b",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "A feel good movie",
+                      "className": "movieDesc mt-3",
+                    },
+                    "ref": null,
+                    "rendered": "A feel good movie",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

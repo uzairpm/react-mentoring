@@ -18,17 +18,13 @@ export default class MovieDetails extends Component {
     }
     componentDidMount() {
         let url = `${Constants.baseURL}/${this.props.match.params.id}`;
-        fetch(url)
-            .then(res => res.json())
-            .then(response => {
-                this.setState({
-                    movie: response
-                });
-                this.fetchSimilarMovies(response.genres[0]);
-            });
+        this.fetchMovieDetails(url);
     }
     componentWillReceiveProps(nextProps) {
         let url = `${Constants.baseURL}/${nextProps.match.params.id}`;
+        this.fetchMovieDetails(url);
+    }
+    fetchMovieDetails(url) {
         fetch(url)
             .then(res => res.json())
             .then(response => {

@@ -1,10 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation ES6 component 1`] = `
+exports[`Check Component creation ErrorBoundary component 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Es6Component />,
+  Symbol(enzyme.__unrendered__): <ErrorBoundary>
+    <Button
+      label="Search"
+    />
+  </ErrorBoundary>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,27 +19,25 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": "Hello World using ES6 React.Component",
-      "onClick": [Function],
+      "label": "Search",
     },
     "ref": null,
-    "rendered": "Hello World using ES6 React.Component",
-    "type": "h2",
+    "rendered": null,
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": "Hello World using ES6 React.Component",
-        "onClick": [Function],
+        "label": "Search",
       },
       "ref": null,
-      "rendered": "Hello World using ES6 React.Component",
-      "type": "h2",
+      "rendered": null,
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

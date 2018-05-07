@@ -1,42 +1,23 @@
 import React, { Component } from 'react';
 import classname from 'classname';
 
-const DELAY = 300;
-const LOADER_DELAY = 900;
+// const DELAY = 300;
+// const LOADER_DELAY = 900;
 const CLASS_NAME = 'btn';
 
 export default class Button extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            disabled: false,
-            showLoading: false,
+            disabled: false
+            // showLoading: false,
         };
     }
     onClick(event) {
         const { clickHandler } = this.props;
-
         event.preventDefault();
         event.stopPropagation();
-
-        this.setState({ disabled: true });
-
-        const handler = clickHandler();
-
-        if (handler && handler instanceof Promise) {
-            const loader = setTimeout(() => this.setState({ showLoading: true }), LOADER_DELAY);
-
-            handler.then(() => {
-                clearTimeout(loader);
-
-                setTimeout(() => this.setState({
-                    disabled: false,
-                    showLoading: false,
-                }), DELAY);
-            });
-        } else {
-            this.setState({ disabled: false });
-        }
+        clickHandler();
     }
     render() {
         const { type, style, className, disabled, label } = this.props;
