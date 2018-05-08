@@ -146,7 +146,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Check Component creation Header component 2`] = `
+exports[`Check Component creation Header component 2 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],

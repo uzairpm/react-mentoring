@@ -6,9 +6,9 @@ describe('Check Component creation', () => {
     test('Header component', () => {
         const element = shallow(<Header/>);
         expect(element).toMatchSnapshot();
+    });
+    test('Header component 2', () => {
         const element2 = shallow(<Header showSearchButton={true}/>);
         expect(element2).toMatchSnapshot();
-        // console.log(element2.debug());
-        // expect(element2.html()).toContain('<BackButton />');
     });
 });
