@@ -14,7 +14,6 @@ describe('Check Component creation', () => {
             overview: 'A feel good movie'
         };
         const element = shallow(<MovieBanner movie={movieObj}/>);
-        // console.log(element.debug());
         expect(element).toMatchSnapshot();
     });
 });

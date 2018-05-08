@@ -10,7 +10,6 @@ describe('Check Component creation', () => {
             value={'matrix'}
             valChange={onChangeText}
             searchClick={onClickSearch}/>);
-        // console.log(element.debug());
         expect(element).toMatchSnapshot();
     });
 });

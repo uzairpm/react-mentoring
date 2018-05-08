@@ -16,6 +16,5 @@ describe('Check Component creation', () => {
         }];
         const element = shallow(<SimilarMovies genre="Action" movies={moviesArray}/>);
         expect(element).toMatchSnapshot();
-        // console.log(element.debug());
     });
 });
