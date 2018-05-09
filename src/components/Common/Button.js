@@ -33,7 +33,7 @@ export default class Button extends Component {
                 style={style}
                 disabled={disabled === true ? disabled : this.state.disabled}
                 onClick={event => this.onClick(event)}>
-                {this.state.showLoading === true ? 'Loading..' : label}
+                { label }
             </button>
         );
     }

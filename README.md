@@ -9,10 +9,10 @@ The objectives of this branch are,
 
 Available commands to run:
 
-### `npm run start`
-### `npm run start:dev`
 ### `npm run test`
 ### `npm run test:coverage`
 ### `npm run cypress:open`
+### `npm run start`
+### `npm run start:dev`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

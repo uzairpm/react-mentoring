@@ -18,21 +18,25 @@ export default class MovieDetails extends Component {
     }
     componentDidMount() {
         let url = `${Constants.baseURL}/${this.props.match.params.id}`;
-        this.fetchMovieDetails(url);
+        this.fetchMovieDetails(url).then(response => {
+            this.populateState(response);
+            this.fetchSimilarMovies(response.genres[0]);
+        });
     }
     componentWillReceiveProps(nextProps) {
         let url = `${Constants.baseURL}/${nextProps.match.params.id}`;
-        this.fetchMovieDetails(url);
+        this.fetchMovieDetails(url).then(response => {
+            this.populateState(response);
+            this.fetchSimilarMovies(response.genres[0]);
+        });
     }
     fetchMovieDetails(url) {
-        fetch(url)
-            .then(res => res.json())
-            .then(response => {
-                this.setState({
-                    movie: response
-                });
-                this.fetchSimilarMovies(response.genres[0]);
-            });
+        return fetch(url).then(res => res.json());
+    }
+    populateState(response) {
+        this.setState({
+            movie: response
+        });
     }
     fetchSimilarMovies(genre) {
         let url = `${Constants.baseURL}?search=${genre}&searchBy=genres&sortBy=release_date&sortOrder=desc`;

@@ -1,18 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation MovieDetails component 1`] = `
+exports[`Check Component creation MainPage component 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MovieDetails
-    match={
-      Object {
-        "params": Object {
-          "id": 603,
-        },
-      }
-    }
-  />,
+  Symbol(enzyme.__unrendered__): <MainPage />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -27,17 +19,20 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
-          showSearchButton={true}
+          genreClick={[Function]}
+          searchClick={[Function]}
+          showSearchButton={false}
+          titleActive={true}
+          titleClick={[Function]}
+          value=""
+          valueChangeHandler={[Function]}
         />,
-        <MovieBanner
-          movie={Object {}}
-          vote_average={0}
-        />,
-        <SimilarMovies
-          genre=""
+        <SearchResults
           movies={Array []}
+          ratingClick={[Function]}
+          releaseDate={true}
+          releaseDateClick={[Function]}
         />,
-        <Footer />,
       ],
     },
     "ref": null,
@@ -47,7 +42,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "showSearchButton": true,
+          "genreClick": [Function],
+          "searchClick": [Function],
+          "showSearchButton": false,
+          "titleActive": true,
+          "titleClick": [Function],
+          "value": "",
+          "valueChangeHandler": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -56,32 +57,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "movie": Object {},
-          "vote_average": 0,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "genre": "",
           "movies": Array [],
+          "ratingClick": [Function],
+          "releaseDate": true,
+          "releaseDateClick": [Function],
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -97,17 +79,20 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
-            showSearchButton={true}
+            genreClick={[Function]}
+            searchClick={[Function]}
+            showSearchButton={false}
+            titleActive={true}
+            titleClick={[Function]}
+            value=""
+            valueChangeHandler={[Function]}
           />,
-          <MovieBanner
-            movie={Object {}}
-            vote_average={0}
-          />,
-          <SimilarMovies
-            genre=""
+          <SearchResults
             movies={Array []}
+            ratingClick={[Function]}
+            releaseDate={true}
+            releaseDateClick={[Function]}
           />,
-          <Footer />,
         ],
       },
       "ref": null,
@@ -117,7 +102,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "showSearchButton": true,
+            "genreClick": [Function],
+            "searchClick": [Function],
+            "showSearchButton": false,
+            "titleActive": true,
+            "titleClick": [Function],
+            "value": "",
+            "valueChangeHandler": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -126,32 +117,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "movie": Object {},
-            "vote_average": 0,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "genre": "",
             "movies": Array [],
+            "ratingClick": [Function],
+            "releaseDate": true,
+            "releaseDateClick": [Function],
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

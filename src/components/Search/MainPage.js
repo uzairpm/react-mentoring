@@ -14,11 +14,11 @@ export default class MainPage extends Component {
             sortByReleaseDate: true,
             searchText: ''
         };
-        this.titleClick = this.titleClick.bind(this);
-        this.genreClick = this.genreClick.bind(this);
-        this.searchClick = this.searchClick.bind(this);
-        this.releaseDateClick = this.releaseDateClick.bind(this);
-        this.ratingClick = this.ratingClick.bind(this);
+        this.handleTitleClick = this.handleTitleClick.bind(this);
+        this.handleGenreClick = this.handleGenreClick.bind(this);
+        this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.handleReleaseDateClick = this.handleReleaseDateClick.bind(this);
+        this.handleRatingClick = this.handleRatingClick.bind(this);
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
     refreshSearchResults() {
@@ -33,21 +33,21 @@ export default class MainPage extends Component {
                 });
             });
     }
-    searchClick() {
+    handleSearchClick() {
         this.refreshSearchResults();
     }
-    titleClick() {
+    handleTitleClick() {
         this.setState({ titleActive: true });
     }
-    genreClick() {
+    handleGenreClick() {
         this.setState({ titleActive: false });
     }
-    releaseDateClick() {
+    handleReleaseDateClick() {
         this.setState({ sortByReleaseDate: true }, () => {
             this.refreshSearchResults();
         });
     }
-    ratingClick() {
+    handleRatingClick() {
         this.setState({ sortByReleaseDate: false }, () => {
             this.refreshSearchResults();
         });
@@ -64,13 +64,13 @@ export default class MainPage extends Component {
                     titleActive={this.state.titleActive}
                     value={this.state.searchText}
                     valueChangeHandler={this.valueChangeHandler}
-                    titleClick={this.titleClick}
-                    genreClick={this.genreClick}
-                    searchClick={this.searchClick} />
+                    titleClick={this.handleTitleClick}
+                    genreClick={this.handleGenreClick}
+                    searchClick={this.handleSearchClick} />
                 <SearchResults movies={this.state.movies}
                     releaseDate={this.state.sortByReleaseDate}
-                    releaseDateClick={this.releaseDateClick}
-                    ratingClick={this.ratingClick} />
+                    releaseDateClick={this.handleReleaseDateClick}
+                    ratingClick={this.handleRatingClick} />
             </div>
         );
     }

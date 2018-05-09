@@ -13,4 +13,8 @@ describe('Check Component creation', () => {
         element.setState({ hasError: true });
         expect(element.text()).toEqual('Something went wrong. Please refresh or try again later.');
     });
+    test('ErrorBoundary', () => {
+        element.instance().componentDidCatch('error','error');
+        expect(element.state('hasError')).toEqual(true);
+    });
 });

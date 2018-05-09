@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchFilter
     ratingClick={[MockFunction]}
+    releaseDate={true}
     releaseDateClick={[MockFunction]}
     resultCount={3}
   />,
@@ -25,6 +26,313 @@ ShallowWrapper {
         className="searchFilterBar"
       >
         3
+         movies found
+        <div
+          className="float-right"
+        >
+          <label
+            className="mr-3"
+          >
+            Sort by
+          </label>
+          <Button
+            className="btn btn-sm mr-3 btn-dark"
+            clickHandler={[MockFunction]}
+            label="Release Date"
+          />
+          <Button
+            className="btn btn-sm btn-light"
+            clickHandler={[MockFunction]}
+            label="Rating"
+          />
+        </div>
+      </div>,
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          3,
+          " movies found",
+          <div
+            className="float-right"
+          >
+            <label
+              className="mr-3"
+            >
+              Sort by
+            </label>
+            <Button
+              className="btn btn-sm mr-3 btn-dark"
+              clickHandler={[MockFunction]}
+              label="Release Date"
+            />
+            <Button
+              className="btn btn-sm btn-light"
+              clickHandler={[MockFunction]}
+              label="Rating"
+            />
+          </div>,
+        ],
+        "className": "searchFilterBar",
+      },
+      "ref": null,
+      "rendered": Array [
+        3,
+        " movies found",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="mr-3"
+              >
+                Sort by
+              </label>,
+              <Button
+                className="btn btn-sm mr-3 btn-dark"
+                clickHandler={[MockFunction]}
+                label="Release Date"
+              />,
+              <Button
+                className="btn btn-sm btn-light"
+                clickHandler={[MockFunction]}
+                label="Rating"
+              />,
+            ],
+            "className": "float-right",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Sort by",
+                "className": "mr-3",
+              },
+              "ref": null,
+              "rendered": "Sort by",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "btn btn-sm mr-3 btn-dark",
+                "clickHandler": [MockFunction],
+                "label": "Release Date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "btn btn-sm btn-light",
+                "clickHandler": [MockFunction],
+                "label": "Rating",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="searchFilterBar"
+        >
+          3
+           movies found
+          <div
+            className="float-right"
+          >
+            <label
+              className="mr-3"
+            >
+              Sort by
+            </label>
+            <Button
+              className="btn btn-sm mr-3 btn-dark"
+              clickHandler={[MockFunction]}
+              label="Release Date"
+            />
+            <Button
+              className="btn btn-sm btn-light"
+              clickHandler={[MockFunction]}
+              label="Rating"
+            />
+          </div>
+        </div>,
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            3,
+            " movies found",
+            <div
+              className="float-right"
+            >
+              <label
+                className="mr-3"
+              >
+                Sort by
+              </label>
+              <Button
+                className="btn btn-sm mr-3 btn-dark"
+                clickHandler={[MockFunction]}
+                label="Release Date"
+              />
+              <Button
+                className="btn btn-sm btn-light"
+                clickHandler={[MockFunction]}
+                label="Rating"
+              />
+            </div>,
+          ],
+          "className": "searchFilterBar",
+        },
+        "ref": null,
+        "rendered": Array [
+          3,
+          " movies found",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <label
+                  className="mr-3"
+                >
+                  Sort by
+                </label>,
+                <Button
+                  className="btn btn-sm mr-3 btn-dark"
+                  clickHandler={[MockFunction]}
+                  label="Release Date"
+                />,
+                <Button
+                  className="btn btn-sm btn-light"
+                  clickHandler={[MockFunction]}
+                  label="Rating"
+                />,
+              ],
+              "className": "float-right",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Sort by",
+                  "className": "mr-3",
+                },
+                "ref": null,
+                "rendered": "Sort by",
+                "type": "label",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "btn btn-sm mr-3 btn-dark",
+                  "clickHandler": [MockFunction],
+                  "label": "Release Date",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "btn btn-sm btn-light",
+                  "clickHandler": [MockFunction],
+                  "label": "Rating",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Check Component creation SearchFilter component 2 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchFilter
+    ratingClick={[MockFunction]}
+    releaseDate={false}
+    releaseDateClick={[MockFunction]}
+    resultCount={2}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="searchFilterBar"
+      >
+        2
          movies found
         <div
           className="float-right"
@@ -55,7 +363,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          3,
+          2,
           " movies found",
           <div
             className="float-right"
@@ -81,7 +389,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        3,
+        2,
         " movies found",
         Object {
           "instance": null,
@@ -164,7 +472,7 @@ ShallowWrapper {
         "children": <div
           className="searchFilterBar"
         >
-          3
+          2
            movies found
           <div
             className="float-right"
@@ -195,7 +503,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            3,
+            2,
             " movies found",
             <div
               className="float-right"
@@ -221,7 +529,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          3,
+          2,
           " movies found",
           Object {
             "instance": null,

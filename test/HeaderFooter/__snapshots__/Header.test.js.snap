@@ -4,7 +4,9 @@ exports[`Check Component creation Header component 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__unrendered__): <Header
+    showSearchButton={false}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -28,7 +30,14 @@ ShallowWrapper {
             netflixroulette
           </a>
         </nav>,
-        false,
+        <SearchBox
+          genreClick={undefined}
+          searchClick={undefined}
+          titleActive={undefined}
+          titleClick={undefined}
+          valChange={undefined}
+          value={undefined}
+        />,
       ],
       "className": "container",
     },
@@ -46,7 +55,7 @@ ShallowWrapper {
             >
               netflixroulette
             </a>,
-            undefined,
+            false,
           ],
           "className": "navbar navbar-light",
         },
@@ -65,11 +74,26 @@ ShallowWrapper {
             "rendered": "netflixroulette",
             "type": "a",
           },
-          undefined,
+          false,
         ],
         "type": "nav",
       },
-      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "genreClick": undefined,
+          "searchClick": undefined,
+          "titleActive": undefined,
+          "titleClick": undefined,
+          "valChange": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -90,7 +114,14 @@ ShallowWrapper {
               netflixroulette
             </a>
           </nav>,
-          false,
+          <SearchBox
+            genreClick={undefined}
+            searchClick={undefined}
+            titleActive={undefined}
+            titleClick={undefined}
+            valChange={undefined}
+            value={undefined}
+          />,
         ],
         "className": "container",
       },
@@ -108,7 +139,7 @@ ShallowWrapper {
               >
                 netflixroulette
               </a>,
-              undefined,
+              false,
             ],
             "className": "navbar navbar-light",
           },
@@ -127,11 +158,26 @@ ShallowWrapper {
               "rendered": "netflixroulette",
               "type": "a",
             },
-            undefined,
+            false,
           ],
           "type": "nav",
         },
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "genreClick": undefined,
+            "searchClick": undefined,
+            "titleActive": undefined,
+            "titleClick": undefined,
+            "valChange": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "div",
     },

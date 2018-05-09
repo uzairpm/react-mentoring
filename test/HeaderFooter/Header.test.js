@@ -4,7 +4,7 @@ import Header from '../../src/components/Header/Header';
 
 describe('Check Component creation', () => {
     test('Header component', () => {
-        const element = shallow(<Header/>);
+        const element = shallow(<Header showSearchButton={false}/>);
         expect(element).toMatchSnapshot();
     });
     test('Header component 2', () => {
