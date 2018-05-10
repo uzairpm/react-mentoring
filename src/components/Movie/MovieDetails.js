@@ -7,6 +7,9 @@ import SimilarMovies from './SimilarMovies';
 import MovieBanner from './MovieBanner';
 import './moviedetails.css';
 
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 export default class MovieDetails extends Component {
     constructor(props) {
         super(props);
@@ -18,20 +21,17 @@ export default class MovieDetails extends Component {
     }
     componentDidMount() {
         let url = `${Constants.baseURL}/${this.props.match.params.id}`;
-        this.fetchMovieDetails(url).then(response => {
+        this.getRequest(url).then(response => {
             this.populateState(response);
             this.fetchSimilarMovies(response.genres[0]);
         });
     }
     componentWillReceiveProps(nextProps) {
         let url = `${Constants.baseURL}/${nextProps.match.params.id}`;
-        this.fetchMovieDetails(url).then(response => {
+        this.getRequest(url).then(response => {
             this.populateState(response);
             this.fetchSimilarMovies(response.genres[0]);
         });
-    }
-    fetchMovieDetails(url) {
-        return fetch(url).then(res => res.json());
     }
     populateState(response) {
         this.setState({
@@ -40,14 +40,19 @@ export default class MovieDetails extends Component {
     }
     fetchSimilarMovies(genre) {
         let url = `${Constants.baseURL}?search=${genre}&searchBy=genres&sortBy=release_date&sortOrder=desc`;
-        fetch(url)
-            .then(res => res.json())
+        this.getRequest(url)
             .then(response => {
-                this.setState({
-                    selectedGenre: genre,
-                    similarMovies: response.data
-                });
+                this.populateStateForSimilarMovies(genre, response.data);
             });
+    }
+    getRequest(url) {
+        return fetch(url).then(res => res.json());
+    }
+    populateStateForSimilarMovies(genre, response) {
+        this.setState({
+            selectedGenre: genre,
+            similarMovies: response
+        });
     }
     render() {
         return (

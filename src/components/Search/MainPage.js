@@ -5,6 +5,9 @@ import Constants from '../Common/constants';
 import Header from '../Header/Header';
 import SearchResults from '../Search/SearchResults';
 
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 export default class MainPage extends Component {
     constructor(props) {
         super(props);
@@ -25,13 +28,17 @@ export default class MainPage extends Component {
         let titleOrGenre = (this.state.titleActive === true) ? 'title' : 'genres';
         let dateOrVote = (this.state.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
         let urlStr = `${Constants.baseURL}?search=${this.state.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
-        fetch(urlStr)
-            .then(res => res.json())
-            .then(response => {
-                this.setState({
-                    movies: response.data
-                });
-            });
+        this.fetchSearchResults(urlStr).then(response => {
+            this.populateState(response.data);
+        });
+    }
+    populateState(response) {
+        this.setState({
+            movies: response
+        });
+    }
+    fetchSearchResults(urlStr) {
+        return fetch(urlStr).then(res => res.json());
     }
     handleSearchClick() {
         this.refreshSearchResults();

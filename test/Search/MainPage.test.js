@@ -19,12 +19,17 @@ describe('Check Component creation', () => {
         element.instance().valueChangeHandler({target: {value: 'mat'}});
         expect(element.state('searchText')).toEqual('mat');
     });
-    /* test('MainPage state 4', () => {
+    test('MainPage state 4', () => {
         element.instance().handleReleaseDateClick();
         expect(element.state('sortByReleaseDate')).toEqual(true);
     });
     test('MainPage state 5', () => {
         element.instance().handleRatingClick();
         expect(element.state('sortByReleaseDate')).toEqual(false);
-    }); */
+    });
+    test('State populate', () => {
+        var movies = {test: 'test'};
+        element.instance().populateState(movies);
+        expect(element.state('movies').test).toEqual('test');
+    })
 });
