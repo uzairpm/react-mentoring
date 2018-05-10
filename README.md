@@ -1,3 +1,6 @@
+
+<img src="https://api.travis-ci.org/uzairpm/react-mentoring.svg?branch=task4" />
+
 The objectives of this branch are,
 1) Coverage > 60% Write tests using enzyme and jest
 

@@ -10,4 +10,4 @@ branches:
   - task4
 script:
   - npm test
-  - npm run cypress:open --record
+  - $(npm bin)/cypress run --record
