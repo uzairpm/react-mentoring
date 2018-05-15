@@ -1,10 +1,16 @@
-Assignment project demonstrating the various ways in which a React component can be written.
+The objectives of this branch are,
+1) Create package.json file and install React, Redux, React-Redux, React-Router, Jest.
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+2) Install and configure webpack & babel to get build artifact by running npm command
 
-In the project directory, you can run:
+3) Set DEV and PROD build configuration. Use env variables, dev server, optimizations for PROD build
 
-### `npm start`
+4) Set up testing. You should have test command in your package.json file, which will run your future tests. Don’t use React boilerplate for this task.
 
-Runs the app in the development mode.<br>
+Available commands to run:
+
+### `npm run start`
+### `npm run start:dev`
+### `npm run test`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
