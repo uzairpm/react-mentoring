@@ -8,5 +8,6 @@ cache:
 branches:
   only:
   - task4
+  - task5
 script:
   - npm test

@@ -1,14 +1,16 @@
 
-<img src="https://api.travis-ci.org/uzairpm/react-mentoring.svg?branch=task4" />
+<img src="https://api.travis-ci.org/uzairpm/react-mentoring.svg?branch=task5" />
 
 The objectives of this branch are,
-1) Coverage > 60% Write tests using enzyme and jest
+1) Go through API docs in swagger: http://react-cdp-api.herokuapp.com/api-docs API Endpoint: http://react-cdp-api.herokuapp.com/
 
-2) Use snapshot testing
+2) Make your components perform real AJAX requests.
 
-3) Use coverage tool
+3) Move data fetches to actions and pass data to your components with redux.
 
-4) Write at least one e2e test using library from the list: Cypress, CasperJS, Protractor, Nightwatch, Webdriver
+4) Cover actions and reducers with unit tests.
+
+5) Add the ability to store your apps state offline and use it to start-up the app. You can take a look at redux-persist library for further reference.
 
 Available commands to run:
 
