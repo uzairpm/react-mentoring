@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation Header component 1`] = `
+exports[`Check Component creation Header component snapshot test 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -192,7 +192,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Check Component creation Header component 2 1`] = `
+exports[`Check Component creation Header component snapshot test when search button is enabled 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],

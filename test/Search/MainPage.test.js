@@ -1,3 +1,4 @@
+import { shallow } from 'enzyme';
 import React from 'react';
 
 import MainPage from '../../src/components/Search/MainPage';

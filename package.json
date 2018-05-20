@@ -9,8 +9,7 @@
         "start:dev": "npm run wds -- --config ./webpack.config.dev.js --mode development",
         "start": "simplehttpserver dist",
         "test": "jest",
-        "test:coverage": "npm run test -- --coverage",
-        "cypress:open": "cypress open"
+        "test:e2e": "cypress open"
     },
     "jest": {
         "setupFiles": [

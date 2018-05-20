@@ -1,26 +1,28 @@
+import { shallow } from 'enzyme';
 import React from 'react';
 
 import Button from '../../src/components/Common/Button';
 
 describe('Check Component creation', () => {
-    const element = shallow(<Button type='submit' label='Submit' className='b1'/>);
-    test('Button component', () => {
+    const getComponent = (props) => shallow(<Button label="submit" {...props} />);
+    const element = getComponent({ type: 'submit', className: 'b1' });
+    
+    test('Button component snapshot test', () => {
         expect(element).toMatchSnapshot();
-        expect(element.text()).toEqual('Submit');
     });
-    test('Button props', () => {
+    test('Testing for Button props', () => {
         expect(element.prop('type')).toEqual('submit');
         expect(element.prop('className')).toEqual('b1 btn');
     });
-    test('Button click 1', () => {
-        const onClick = jest.fn();
-        const element2 = shallow(<Button label='Submit' className='btn-primary' disabled={true} clickHandler={onClick}/>);
+    test('Test if button is getting disabled', () => {
+        const element2 = getComponent({ className: 'btn-primary', disabled: true });
         expect(element2.prop('disabled')).toEqual(true);
     });
-    test('Button click 2', () => {
+    test('Test if Button handler is invoked', () => {
         const onClick = jest.fn();
         const element2 = shallow(<Button label='Submit' className='btn-primary' disabled={false} clickHandler={onClick}/>);
         expect(element2.prop('disabled')).toEqual(false);
+        
         element2.find('button').simulate('click', {
             target: { },
             preventDefault: function() { },

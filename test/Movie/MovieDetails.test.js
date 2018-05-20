@@ -1,3 +1,4 @@
+import { shallow } from 'enzyme';
 import React from 'react';
 const fetchMock = require('fetch-mock');
 
@@ -10,10 +11,10 @@ beforeEach(function() {
 describe('Check Component creation', () => {
     const match = { params: { id: 603 } };
     const element = shallow(<MovieDetails match={match}/>, {disableLifecycleMethods: false});
-    test('snapshot', () => {
+    test('MovieDetails component snapshot test', () => {
         expect(element).toMatchSnapshot();
     });
-    test('test populateState', () => {
+    test('Check populateState function if it changes state properly', () => {
         var movie = {
             poster_path: '',
             title: 'Matrix',
@@ -26,19 +27,19 @@ describe('Check Component creation', () => {
         element.instance().populateState(movie);
         expect(element.state('movie').title).toEqual('Matrix');
     });
-    test('test populateStateForSimilarMovies', () => {
+    test('Check populateStateForSimilarMovies function', () => {
         var movies = [{genre: ['Action'], id: 100}, {genre: ['Drama'], id: 101}];
         element.instance().populateStateForSimilarMovies('Action', movies);
         expect(element.state('selectedGenre')).toEqual('Action');
     });
-    test('MovieDetails getRequest', () => {
+    test('Check MovieDetails getRequest', () => {
         fetchMock.get('*', {hello: 'world'});
         element.instance().getRequest('http://localhost/api')
             .then(function(data) {
                 expect(data).toEqual({hello: 'world'});
             });
     });
-    test('MovieDetails fetchSimilarMovies', () => {
+    test('Check MovieDetails fetchSimilarMovies', () => {
         element.instance().fetchSimilarMovies('Action');
         expect(element.state('selectedGenre')).toEqual('Action');
     });

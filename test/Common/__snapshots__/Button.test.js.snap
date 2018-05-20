@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation Button component 1`] = `
+exports[`Check Component creation Button component snapshot test 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
     className="b1"
-    label="Submit"
+    label="submit"
     type="submit"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -21,7 +21,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Submit",
+      "children": "submit",
       "className": "b1 btn",
       "disabled": false,
       "onClick": [Function],
@@ -29,7 +29,7 @@ ShallowWrapper {
       "type": "submit",
     },
     "ref": null,
-    "rendered": "Submit",
+    "rendered": "submit",
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -38,7 +38,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Submit",
+        "children": "submit",
         "className": "b1 btn",
         "disabled": false,
         "onClick": [Function],
@@ -46,7 +46,7 @@ ShallowWrapper {
         "type": "submit",
       },
       "ref": null,
-      "rendered": "Submit",
+      "rendered": "submit",
       "type": "button",
     },
   ],
