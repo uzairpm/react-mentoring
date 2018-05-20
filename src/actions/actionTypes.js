@@ -1,0 +1,6 @@
+export const SET_TITLE_ACTIVE = 'ACTIVE_TITLE';
+export const SET_GENRE_ACTIVE = 'ACTIVE_GENRE';
+export const SET_SEARCH_STR = 'SEARCH_STR';
+export const SET_MOVIES_ARR = 'MOVIES_ARR';
+export const SET_REL_DATE_ACTIVE = 'ACTIVE_RELEASE_DATE';
+export const SET_RATING_ACTIVE = 'ACTIVE_RATING';
