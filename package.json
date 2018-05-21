@@ -9,7 +9,7 @@
         "start:dev": "npm run wds -- --config ./webpack.config.dev.js --mode development",
         "start": "simplehttpserver dist",
         "test": "jest",
-        "test:e2e": "cypress open"
+        "test:e2e": "concurrently --kill-others \"npm run start:dev\" \"cypress open\""
     },
     "jest": {
         "setupFiles": [
@@ -43,6 +43,7 @@
         "bootstrap": "^4.1.0",
         "classname": "0.0.0",
         "compression-webpack-plugin": "^1.1.11",
+        "concurrently": "^3.5.1",
         "css-loader": "^0.28.11",
         "cypress": "^2.1.0",
         "enzyme": "^3.3.0",
