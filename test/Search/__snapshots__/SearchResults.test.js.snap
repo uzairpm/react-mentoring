@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation SearchResults component snapshot testing with no data 1`] = `
+exports[`SearchResults Component Snapshot testing with no data passed to movies 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -78,7 +78,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`Check Component creation SearchResults component snapshot testing with some data 1`] = `
+exports[`SearchResults Component Snapshot testing with populated data array passed to movies 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],

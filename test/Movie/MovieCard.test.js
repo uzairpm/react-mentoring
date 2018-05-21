@@ -3,7 +3,7 @@ import React from 'react';
 
 import MovieCard from '../../src/components/Movie/MovieCard';
 
-describe('Check Component creation', () => {
+describe('MovieCard Component', () => {
     let element;
     beforeAll(() => {
         const movieObj = {
@@ -18,7 +18,7 @@ describe('Check Component creation', () => {
         };
         element = shallow(<MovieCard movie={movieObj}/>);
     });
-    test('MovieCard component snapshot test', () => {
+    test('Snapshot test when a movie object is passed', () => {
         expect(element).toMatchSnapshot();
     });
 });

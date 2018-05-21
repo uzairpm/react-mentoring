@@ -3,7 +3,7 @@ import React from 'react';
 
 import MovieBanner from '../../src/components/Movie/MovieBanner';
 
-describe('Check Component creation', () => {
+describe('MovieBanner Component', () => {
     let element;
     beforeAll(() => {
         const movieObj = {
@@ -17,7 +17,7 @@ describe('Check Component creation', () => {
         };
         element = shallow(<MovieBanner movie={movieObj}/>);
     });
-    test('MovieBanner component snapshot test', () => {
+    test('Snapshot test when a movie object is passed', () => {
         expect(element).toMatchSnapshot();
     });
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation SimilarMovies component snapshot test 1`] = `
+exports[`SimilarMovies Component Snapshot test when moovies and genre are passed as props 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],

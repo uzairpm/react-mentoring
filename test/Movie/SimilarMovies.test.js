@@ -3,7 +3,7 @@ import React from 'react';
 
 import SimilarMovies from '../../src/components/Movie/SimilarMovies';
 
-describe('Check Component creation', () => {
+describe('SimilarMovies Component', () => {
     let element;
     beforeAll(() => {
         const moviesArray = [{
@@ -18,7 +18,7 @@ describe('Check Component creation', () => {
         }];
         element = shallow(<SimilarMovies genre="Action" movies={moviesArray}/>);
     })
-    test('SimilarMovies component snapshot test', () => {
+    test('Snapshot test when moovies and genre are passed as props', () => {
         expect(element).toMatchSnapshot();
     });
 });
