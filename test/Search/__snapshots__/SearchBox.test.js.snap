@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox Component Snapshot test with custom values for props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBox
+    searchClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+      }
+    }
+    titleActive={false}
+    valChange={[MockFunction]}
+    value="mat"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="lead"
+        >
+          FIND YOUR MOVIE
+        </p>,
+        <div
+          className="input-group mb-3"
+        >
+          <input
+            className="form-control rounded-0 searchInput"
+            onChange={[MockFunction]}
+            onKeyPress={[Function]}
+            type="text"
+            value="mat"
+          />
+        </div>,
+        <label
+          className="mr-3"
+        >
+          SEARCH BY
+        </label>,
+        <Button
+          className="widerButton btn btn-sm mr-3 btn-outline-dark"
+          clickHandler={undefined}
+          label="TITLE"
+        />,
+        <Button
+          className="widerButton btn btn-sm btn-dark"
+          clickHandler={undefined}
+          label="GENRE"
+        />,
+        <Button
+          className="widerButton btn btn-primary btn-sm float-right"
+          clickHandler={
+            [MockFunction] {
+              "calls": Array [
+                Array [],
+              ],
+            }
+          }
+          label="SEARCH"
+          type="submit"
+        />,
+      ],
+      "className": "jumbotron",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "FIND YOUR MOVIE",
+          "className": "lead",
+        },
+        "ref": null,
+        "rendered": "FIND YOUR MOVIE",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <input
+            className="form-control rounded-0 searchInput"
+            onChange={[MockFunction]}
+            onKeyPress={[Function]}
+            type="text"
+            value="mat"
+          />,
+          "className": "input-group mb-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control rounded-0 searchInput",
+            "onChange": [MockFunction],
+            "onKeyPress": [Function],
+            "type": "text",
+            "value": "mat",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SEARCH BY",
+          "className": "mr-3",
+        },
+        "ref": null,
+        "rendered": "SEARCH BY",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
+          "clickHandler": undefined,
+          "label": "TITLE",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-sm btn-dark",
+          "clickHandler": undefined,
+          "label": "GENRE",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-primary btn-sm float-right",
+          "clickHandler": [MockFunction] {
+            "calls": Array [
+              Array [],
+            ],
+          },
+          "label": "SEARCH",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="lead"
+          >
+            FIND YOUR MOVIE
+          </p>,
+          <div
+            className="input-group mb-3"
+          >
+            <input
+              className="form-control rounded-0 searchInput"
+              onChange={[MockFunction]}
+              onKeyPress={[Function]}
+              type="text"
+              value="mat"
+            />
+          </div>,
+          <label
+            className="mr-3"
+          >
+            SEARCH BY
+          </label>,
+          <Button
+            className="widerButton btn btn-sm mr-3 btn-outline-dark"
+            clickHandler={undefined}
+            label="TITLE"
+          />,
+          <Button
+            className="widerButton btn btn-sm btn-dark"
+            clickHandler={undefined}
+            label="GENRE"
+          />,
+          <Button
+            className="widerButton btn btn-primary btn-sm float-right"
+            clickHandler={
+              [MockFunction] {
+                "calls": Array [
+                  Array [],
+                ],
+              }
+            }
+            label="SEARCH"
+            type="submit"
+          />,
+        ],
+        "className": "jumbotron",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "FIND YOUR MOVIE",
+            "className": "lead",
+          },
+          "ref": null,
+          "rendered": "FIND YOUR MOVIE",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="form-control rounded-0 searchInput"
+              onChange={[MockFunction]}
+              onKeyPress={[Function]}
+              type="text"
+              value="mat"
+            />,
+            "className": "input-group mb-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control rounded-0 searchInput",
+              "onChange": [MockFunction],
+              "onKeyPress": [Function],
+              "type": "text",
+              "value": "mat",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SEARCH BY",
+            "className": "mr-3",
+          },
+          "ref": null,
+          "rendered": "SEARCH BY",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
+            "clickHandler": undefined,
+            "label": "TITLE",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-sm btn-dark",
+            "clickHandler": undefined,
+            "label": "GENRE",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-primary btn-sm float-right",
+            "clickHandler": [MockFunction] {
+              "calls": Array [
+                Array [],
+              ],
+            },
+            "label": "SEARCH",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`SearchBox Component Snapshot test with default props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchBox
+    searchClick={[MockFunction]}
+    titleActive={true}
+    valChange={[MockFunction]}
+    value="matrix"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="lead"
+        >
+          FIND YOUR MOVIE
+        </p>,
+        <div
+          className="input-group mb-3"
+        >
+          <input
+            className="form-control rounded-0 searchInput"
+            onChange={[MockFunction]}
+            onKeyPress={[Function]}
+            type="text"
+            value="matrix"
+          />
+        </div>,
+        <label
+          className="mr-3"
+        >
+          SEARCH BY
+        </label>,
+        <Button
+          className="widerButton btn btn-sm mr-3 btn-dark"
+          clickHandler={undefined}
+          label="TITLE"
+        />,
+        <Button
+          className="widerButton btn btn-sm btn-outline-dark"
+          clickHandler={undefined}
+          label="GENRE"
+        />,
+        <Button
+          className="widerButton btn btn-primary btn-sm float-right"
+          clickHandler={[MockFunction]}
+          label="SEARCH"
+          type="submit"
+        />,
+      ],
+      "className": "jumbotron",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "FIND YOUR MOVIE",
+          "className": "lead",
+        },
+        "ref": null,
+        "rendered": "FIND YOUR MOVIE",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <input
+            className="form-control rounded-0 searchInput"
+            onChange={[MockFunction]}
+            onKeyPress={[Function]}
+            type="text"
+            value="matrix"
+          />,
+          "className": "input-group mb-3",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "form-control rounded-0 searchInput",
+            "onChange": [MockFunction],
+            "onKeyPress": [Function],
+            "type": "text",
+            "value": "matrix",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SEARCH BY",
+          "className": "mr-3",
+        },
+        "ref": null,
+        "rendered": "SEARCH BY",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-sm mr-3 btn-dark",
+          "clickHandler": undefined,
+          "label": "TITLE",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-sm btn-outline-dark",
+          "clickHandler": undefined,
+          "label": "GENRE",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "widerButton btn btn-primary btn-sm float-right",
+          "clickHandler": [MockFunction],
+          "label": "SEARCH",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="lead"
+          >
+            FIND YOUR MOVIE
+          </p>,
+          <div
+            className="input-group mb-3"
+          >
+            <input
+              className="form-control rounded-0 searchInput"
+              onChange={[MockFunction]}
+              onKeyPress={[Function]}
+              type="text"
+              value="matrix"
+            />
+          </div>,
+          <label
+            className="mr-3"
+          >
+            SEARCH BY
+          </label>,
+          <Button
+            className="widerButton btn btn-sm mr-3 btn-dark"
+            clickHandler={undefined}
+            label="TITLE"
+          />,
+          <Button
+            className="widerButton btn btn-sm btn-outline-dark"
+            clickHandler={undefined}
+            label="GENRE"
+          />,
+          <Button
+            className="widerButton btn btn-primary btn-sm float-right"
+            clickHandler={[MockFunction]}
+            label="SEARCH"
+            type="submit"
+          />,
+        ],
+        "className": "jumbotron",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "FIND YOUR MOVIE",
+            "className": "lead",
+          },
+          "ref": null,
+          "rendered": "FIND YOUR MOVIE",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="form-control rounded-0 searchInput"
+              onChange={[MockFunction]}
+              onKeyPress={[Function]}
+              type="text"
+              value="matrix"
+            />,
+            "className": "input-group mb-3",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "form-control rounded-0 searchInput",
+              "onChange": [MockFunction],
+              "onKeyPress": [Function],
+              "type": "text",
+              "value": "matrix",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SEARCH BY",
+            "className": "mr-3",
+          },
+          "ref": null,
+          "rendered": "SEARCH BY",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-sm mr-3 btn-dark",
+            "clickHandler": undefined,
+            "label": "TITLE",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-sm btn-outline-dark",
+            "clickHandler": undefined,
+            "label": "GENRE",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "widerButton btn btn-primary btn-sm float-right",
+            "clickHandler": [MockFunction],
+            "label": "SEARCH",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

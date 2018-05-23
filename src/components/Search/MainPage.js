@@ -5,6 +5,9 @@ import Constants from '../Common/constants';
 import Header from '../Header/Header';
 import SearchResults from '../Search/SearchResults';
 
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 export default class MainPage extends Component {
     constructor(props) {
         super(props);
@@ -14,40 +17,44 @@ export default class MainPage extends Component {
             sortByReleaseDate: true,
             searchText: ''
         };
-        this.titleClick = this.titleClick.bind(this);
-        this.genreClick = this.genreClick.bind(this);
-        this.searchClick = this.searchClick.bind(this);
-        this.releaseDateClick = this.releaseDateClick.bind(this);
-        this.ratingClick = this.ratingClick.bind(this);
+        this.handleTitleClick = this.handleTitleClick.bind(this);
+        this.handleGenreClick = this.handleGenreClick.bind(this);
+        this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.handleReleaseDateClick = this.handleReleaseDateClick.bind(this);
+        this.handleRatingClick = this.handleRatingClick.bind(this);
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
     refreshSearchResults() {
         let titleOrGenre = (this.state.titleActive === true) ? 'title' : 'genres';
         let dateOrVote = (this.state.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
         let urlStr = `${Constants.baseURL}?search=${this.state.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
-        fetch(urlStr)
-            .then(res => res.json())
-            .then(response => {
-                this.setState({
-                    movies: response.data
-                });
-            });
+        this.fetchSearchResults(urlStr).then(response => {
+            this.populateState(response.data);
+        });
     }
-    searchClick() {
+    populateState(response) {
+        this.setState({
+            movies: response
+        });
+    }
+    fetchSearchResults(urlStr) {
+        return fetch(urlStr).then(res => res.json());
+    }
+    handleSearchClick() {
         this.refreshSearchResults();
     }
-    titleClick() {
+    handleTitleClick() {
         this.setState({ titleActive: true });
     }
-    genreClick() {
+    handleGenreClick() {
         this.setState({ titleActive: false });
     }
-    releaseDateClick() {
+    handleReleaseDateClick() {
         this.setState({ sortByReleaseDate: true }, () => {
             this.refreshSearchResults();
         });
     }
-    ratingClick() {
+    handleRatingClick() {
         this.setState({ sortByReleaseDate: false }, () => {
             this.refreshSearchResults();
         });
@@ -64,13 +71,13 @@ export default class MainPage extends Component {
                     titleActive={this.state.titleActive}
                     value={this.state.searchText}
                     valueChangeHandler={this.valueChangeHandler}
-                    titleClick={this.titleClick}
-                    genreClick={this.genreClick}
-                    searchClick={this.searchClick} />
+                    titleClick={this.handleTitleClick}
+                    genreClick={this.handleGenreClick}
+                    searchClick={this.handleSearchClick} />
                 <SearchResults movies={this.state.movies}
                     releaseDate={this.state.sortByReleaseDate}
-                    releaseDateClick={this.releaseDateClick}
-                    ratingClick={this.ratingClick} />
+                    releaseDateClick={this.handleReleaseDateClick}
+                    ratingClick={this.handleRatingClick} />
             </div>
         );
     }

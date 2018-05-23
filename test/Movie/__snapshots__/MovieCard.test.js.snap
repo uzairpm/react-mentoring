@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard Component Snapshot test when a movie object is passed 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieCard
+    movie={
+      Object {
+        "genres": Array [
+          "Action",
+          "Drama",
+        ],
+        "id": 101,
+        "overview": "A feel good movie",
+        "poster_path": "",
+        "release_date": "2017-10-10",
+        "runtime": 108,
+        "title": "Feel Good",
+        "vote_average": 8,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Link
+        className="anchorStyle"
+        replace={false}
+        to="/film/101"
+      >
+        <div
+          className="movieCard"
+        >
+          <img
+            className="card-img-top albumArt"
+            src=""
+          />
+          <div
+            className="movieDetails mt-2"
+          >
+            <div>
+              <label
+                className="movieTitle"
+              >
+                Feel Good
+              </label>
+              <span
+                className="badge badge-light float-right"
+              >
+                2017
+              </span>
+            </div>
+            <small>
+              Action, Drama
+            </small>
+          </div>
+        </div>
+      </Link>,
+      "className": "col-12 col-sm-6 col-md-4",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="movieCard"
+        >
+          <img
+            className="card-img-top albumArt"
+            src=""
+          />
+          <div
+            className="movieDetails mt-2"
+          >
+            <div>
+              <label
+                className="movieTitle"
+              >
+                Feel Good
+              </label>
+              <span
+                className="badge badge-light float-right"
+              >
+                2017
+              </span>
+            </div>
+            <small>
+              Action, Drama
+            </small>
+          </div>
+        </div>,
+        "className": "anchorStyle",
+        "replace": false,
+        "to": "/film/101",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              className="card-img-top albumArt"
+              src=""
+            />,
+            <div
+              className="movieDetails mt-2"
+            >
+              <div>
+                <label
+                  className="movieTitle"
+                >
+                  Feel Good
+                </label>
+                <span
+                  className="badge badge-light float-right"
+                >
+                  2017
+                </span>
+              </div>
+              <small>
+                Action, Drama
+              </small>
+            </div>,
+          ],
+          "className": "movieCard",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "card-img-top albumArt",
+              "src": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div>
+                  <label
+                    className="movieTitle"
+                  >
+                    Feel Good
+                  </label>
+                  <span
+                    className="badge badge-light float-right"
+                  >
+                    2017
+                  </span>
+                </div>,
+                <small>
+                  Action, Drama
+                </small>,
+              ],
+              "className": "movieDetails mt-2",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      className="movieTitle"
+                    >
+                      Feel Good
+                    </label>,
+                    <span
+                      className="badge badge-light float-right"
+                    >
+                      2017
+                    </span>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Feel Good",
+                      "className": "movieTitle",
+                    },
+                    "ref": null,
+                    "rendered": "Feel Good",
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "2017",
+                      "className": "badge badge-light float-right",
+                    },
+                    "ref": null,
+                    "rendered": "2017",
+                    "type": "span",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Action, Drama",
+                },
+                "ref": null,
+                "rendered": "Action, Drama",
+                "type": "small",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Link
+          className="anchorStyle"
+          replace={false}
+          to="/film/101"
+        >
+          <div
+            className="movieCard"
+          >
+            <img
+              className="card-img-top albumArt"
+              src=""
+            />
+            <div
+              className="movieDetails mt-2"
+            >
+              <div>
+                <label
+                  className="movieTitle"
+                >
+                  Feel Good
+                </label>
+                <span
+                  className="badge badge-light float-right"
+                >
+                  2017
+                </span>
+              </div>
+              <small>
+                Action, Drama
+              </small>
+            </div>
+          </div>
+        </Link>,
+        "className": "col-12 col-sm-6 col-md-4",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div
+            className="movieCard"
+          >
+            <img
+              className="card-img-top albumArt"
+              src=""
+            />
+            <div
+              className="movieDetails mt-2"
+            >
+              <div>
+                <label
+                  className="movieTitle"
+                >
+                  Feel Good
+                </label>
+                <span
+                  className="badge badge-light float-right"
+                >
+                  2017
+                </span>
+              </div>
+              <small>
+                Action, Drama
+              </small>
+            </div>
+          </div>,
+          "className": "anchorStyle",
+          "replace": false,
+          "to": "/film/101",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                className="card-img-top albumArt"
+                src=""
+              />,
+              <div
+                className="movieDetails mt-2"
+              >
+                <div>
+                  <label
+                    className="movieTitle"
+                  >
+                    Feel Good
+                  </label>
+                  <span
+                    className="badge badge-light float-right"
+                  >
+                    2017
+                  </span>
+                </div>
+                <small>
+                  Action, Drama
+                </small>
+              </div>,
+            ],
+            "className": "movieCard",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "card-img-top albumArt",
+                "src": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div>
+                    <label
+                      className="movieTitle"
+                    >
+                      Feel Good
+                    </label>
+                    <span
+                      className="badge badge-light float-right"
+                    >
+                      2017
+                    </span>
+                  </div>,
+                  <small>
+                    Action, Drama
+                  </small>,
+                ],
+                "className": "movieDetails mt-2",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <label
+                        className="movieTitle"
+                      >
+                        Feel Good
+                      </label>,
+                      <span
+                        className="badge badge-light float-right"
+                      >
+                        2017
+                      </span>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Feel Good",
+                        "className": "movieTitle",
+                      },
+                      "ref": null,
+                      "rendered": "Feel Good",
+                      "type": "label",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "2017",
+                        "className": "badge badge-light float-right",
+                      },
+                      "ref": null,
+                      "rendered": "2017",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Action, Drama",
+                  },
+                  "ref": null,
+                  "rendered": "Action, Drama",
+                  "type": "small",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

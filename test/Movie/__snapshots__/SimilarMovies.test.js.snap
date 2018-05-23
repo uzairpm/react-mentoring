@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimilarMovies Component Snapshot test when moovies and genre are passed as props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SimilarMovies
+    genre="Action"
+    movies={
+      Array [
+        Object {
+          "genres": Array [
+            "Action",
+            "Drama",
+          ],
+          "id": 101,
+          "overview": "A feel good movie",
+          "poster_path": "",
+          "release_date": "2017-10-10",
+          "runtime": 108,
+          "title": "Feel Good",
+          "vote_average": 8,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card"
+        >
+          <div
+            className="card-body"
+          >
+            Films by 
+            Action
+             genre
+          </div>
+        </div>,
+        <div
+          className="row"
+        >
+          <MovieCard
+            movie={
+              Object {
+                "genres": Array [
+                  "Action",
+                  "Drama",
+                ],
+                "id": 101,
+                "overview": "A feel good movie",
+                "poster_path": "",
+                "release_date": "2017-10-10",
+                "runtime": 108,
+                "title": "Feel Good",
+                "vote_average": 8,
+              }
+            }
+          />
+        </div>,
+      ],
+      "className": "container mt-2",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card-body"
+          >
+            Films by 
+            Action
+             genre
+          </div>,
+          "className": "card",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Films by ",
+              "Action",
+              " genre",
+            ],
+            "className": "card-body",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Films by ",
+            "Action",
+            " genre",
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <MovieCard
+              movie={
+                Object {
+                  "genres": Array [
+                    "Action",
+                    "Drama",
+                  ],
+                  "id": 101,
+                  "overview": "A feel good movie",
+                  "poster_path": "",
+                  "release_date": "2017-10-10",
+                  "runtime": 108,
+                  "title": "Feel Good",
+                  "vote_average": 8,
+                }
+              }
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "101",
+            "nodeType": "class",
+            "props": Object {
+              "movie": Object {
+                "genres": Array [
+                  "Action",
+                  "Drama",
+                ],
+                "id": 101,
+                "overview": "A feel good movie",
+                "poster_path": "",
+                "release_date": "2017-10-10",
+                "runtime": 108,
+                "title": "Feel Good",
+                "vote_average": 8,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card"
+          >
+            <div
+              className="card-body"
+            >
+              Films by 
+              Action
+               genre
+            </div>
+          </div>,
+          <div
+            className="row"
+          >
+            <MovieCard
+              movie={
+                Object {
+                  "genres": Array [
+                    "Action",
+                    "Drama",
+                  ],
+                  "id": 101,
+                  "overview": "A feel good movie",
+                  "poster_path": "",
+                  "release_date": "2017-10-10",
+                  "runtime": 108,
+                  "title": "Feel Good",
+                  "vote_average": 8,
+                }
+              }
+            />
+          </div>,
+        ],
+        "className": "container mt-2",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="card-body"
+            >
+              Films by 
+              Action
+               genre
+            </div>,
+            "className": "card",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Films by ",
+                "Action",
+                " genre",
+              ],
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Films by ",
+              "Action",
+              " genre",
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <MovieCard
+                movie={
+                  Object {
+                    "genres": Array [
+                      "Action",
+                      "Drama",
+                    ],
+                    "id": 101,
+                    "overview": "A feel good movie",
+                    "poster_path": "",
+                    "release_date": "2017-10-10",
+                    "runtime": 108,
+                    "title": "Feel Good",
+                    "vote_average": 8,
+                  }
+                }
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "101",
+              "nodeType": "class",
+              "props": Object {
+                "movie": Object {
+                  "genres": Array [
+                    "Action",
+                    "Drama",
+                  ],
+                  "id": 101,
+                  "overview": "A feel good movie",
+                  "poster_path": "",
+                  "release_date": "2017-10-10",
+                  "runtime": 108,
+                  "title": "Feel Good",
+                  "vote_average": 8,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

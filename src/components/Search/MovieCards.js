@@ -13,9 +13,7 @@ const MovieCards = (props) => {
                 ratingClick={props.ratingClick} />
             <div className="row">
                 {
-                    props.movies.map(movie => {
-                        return <MovieCard key={movie.id} movie={movie} />
-                    })
+                    props.movies.map(movie => (<MovieCard key={movie.id} movie={movie} />))
                 }
             </div>
             <Footer />

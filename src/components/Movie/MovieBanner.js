@@ -3,7 +3,15 @@ import React, {Component} from 'react';
 import PropTypeShapes from '../Common/PropTypeShapes';
 
 const MovieBanner = (props) => {
-    const { poster_path, title, vote_average, genres, release_date, runtime, overview } = props.movie;
+    const { 
+        poster_path,
+        title,
+        vote_average,
+        genres,
+        release_date, 
+        runtime,
+        overview
+    } = props.movie;
     return (
         <div className="container mt-2">
             <div className="card text-white bg-dark">

@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCards Component Snapshot testing with custom values for props 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieCards
+    movies={
+      Array [
+        Object {
+          "id": 1,
+        },
+        Object {
+          "id": 2,
+        },
+      ]
+    }
+    ratingClick={[MockFunction]}
+    releaseDateClick={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <SearchFilter
+          ratingClick={[MockFunction]}
+          releaseDate={undefined}
+          releaseDateClick={[MockFunction]}
+          resultCount={2}
+        />,
+        <div
+          className="row"
+        >
+          <MovieCard
+            movie={
+              Object {
+                "id": 1,
+              }
+            }
+          />
+          <MovieCard
+            movie={
+              Object {
+                "id": 2,
+              }
+            }
+          />
+        </div>,
+        <Footer />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "ratingClick": [MockFunction],
+          "releaseDate": undefined,
+          "releaseDateClick": [MockFunction],
+          "resultCount": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <MovieCard
+              movie={
+                Object {
+                  "id": 1,
+                }
+              }
+            />,
+            <MovieCard
+              movie={
+                Object {
+                  "id": 2,
+                }
+              }
+            />,
+          ],
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "movie": Object {
+                "id": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "movie": Object {
+                "id": 2,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <SearchFilter
+            ratingClick={[MockFunction]}
+            releaseDate={undefined}
+            releaseDateClick={[MockFunction]}
+            resultCount={2}
+          />,
+          <div
+            className="row"
+          >
+            <MovieCard
+              movie={
+                Object {
+                  "id": 1,
+                }
+              }
+            />
+            <MovieCard
+              movie={
+                Object {
+                  "id": 2,
+                }
+              }
+            />
+          </div>,
+          <Footer />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "ratingClick": [MockFunction],
+            "releaseDate": undefined,
+            "releaseDateClick": [MockFunction],
+            "resultCount": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <MovieCard
+                movie={
+                  Object {
+                    "id": 1,
+                  }
+                }
+              />,
+              <MovieCard
+                movie={
+                  Object {
+                    "id": 2,
+                  }
+                }
+              />,
+            ],
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "movie": Object {
+                  "id": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "movie": Object {
+                  "id": 2,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
