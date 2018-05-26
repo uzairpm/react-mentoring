@@ -26,15 +26,7 @@ class MainPage extends Component {
         let titleOrGenre = (this.props.titleActive === true) ? 'title' : 'genres';
         let dateOrVote = (this.props.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
         let urlStr = `${Constants.baseURL}?search=${this.props.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
-        this.fetchSearchResults(urlStr).then(response => {
-            this.populateMovies(response.data);
-        });
-    }
-    populateMovies(response) {
-        this.props.actions.setMoviesList(response);
-    }
-    fetchSearchResults(urlStr) {
-        return fetch(urlStr).then(res => res.json());
+        this.props.actions.fetchMovies(urlStr);
     }
     handleSearchClick() {
         this.refreshSearchResults();
@@ -43,24 +35,13 @@ class MainPage extends Component {
         this.props.actions.setTitleActive();
     }
     handleGenreClick() {
-        // this.setState({ titleActive: false });
         this.props.actions.setGenreActive();
     }
     handleReleaseDateClick() {
-        this.props.actions.setReleaseDateActive(() => {
-            this.refreshSearchResults();
-        })
-        /* this.setState({ sortByReleaseDate: true }, () => {
-            this.refreshSearchResults();
-        }); */
+        this.props.actions.sortByReleaseDate();
     }
     handleRatingClick() {
-        this.props.actions.setRatingActive(() => {
-            this.refreshSearchResults();
-        });
-        /* this.setState({ sortByReleaseDate: false }, () => {
-            this.refreshSearchResults();
-        }); */
+        this.props.actions.sortByRating();
     }
     valueChangeHandler(e) {
         this.props.actions.setSearchValue(e.target.value);
@@ -85,8 +66,6 @@ class MainPage extends Component {
 }
 
 function mapStateToProps(state, ownProps) {
-    console.log('3 mapStateToProps');
-    console.log(state);
     return {
         movies: state.main.movies,
         titleActive: state.main.titleActive,

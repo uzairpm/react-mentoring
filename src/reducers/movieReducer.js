@@ -1,10 +1,22 @@
 import * as types from '../actions/actionTypes';
 
-export default function movieReducer(state = {}, action) {
+const initialState = {
+    movie: {},
+    selectedGenre: '',
+    similarMovies: []
+};
+export default function movieReducer(state = initialState, action) {
     switch(action.type) {
-        case types.SET_TITLE_ACTIVE:
-            console.log('inside movieReducer');
-            return state;
+        case types.FETCH_MOVIE_DETAILS_SUCCESS:
+            return Object.assign({}, state, {
+                movie: action.movie,
+                selectedGenre: action.movie.genres[0]
+            });
+        case types.FETCH_SIMILAR_MOVIES_SUCCESS:
+            return Object.assign({}, state, {
+                similarMovies: action.similarMovies,
+                selectedGenre: action.selectedGenre
+            });
         default:
             return state;
     }

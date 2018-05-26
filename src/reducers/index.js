@@ -4,7 +4,7 @@ import movie from './movieReducer';
 
 const rootReducer = combineReducers({
     main,
-    // movie
+    movie
 });
 
 export default rootReducer;

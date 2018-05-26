@@ -7,7 +7,6 @@ const initialState = {
     searchText: ''
 };
 export default function mainReducer(state = initialState, action) {
-    console.log('2 mainReducer');
     switch(action.type) {
         case types.SET_TITLE_ACTIVE:
             return Object.assign({}, state, {
@@ -21,19 +20,26 @@ export default function mainReducer(state = initialState, action) {
             return Object.assign({}, state, {
                 searchText: action.value
             });
-        case types.SET_MOVIES_ARR:
+        case types.SORT_RELEASE_DATE:
+            const moviesTemp = state.movies.slice().sort((a,b) => new Date(a.release_date) < new Date(b.release_date));
             return Object.assign({}, state, {
-                movies: action.value
+                sortByReleaseDate: true,
+                movies: moviesTemp
             });
-        case types.SET_REL_DATE_ACTIVE:
-            action.cb();
+        case types.SORT_RATING:
+            const moviesTemp1 = state.movies.slice().sort((a,b) => a.vote_average < b.vote_average);
             return Object.assign({}, state, {
-                sortByReleaseDate: true
+                sortByReleaseDate: false,
+                movies: moviesTemp1
             });
-        case types.SET_RATING_ACTIVE:
-            action.cb();
+        case types.FETCH_MOVIES_REQUEST:
             return Object.assign({}, state, {
-                sortByReleaseDate: false
+                isFetching: true
+            });
+        case types.FETCH_MOVIES_SUCCESS:
+            return Object.assign({}, state, {
+                isFetching: false,
+                movies: action.movies.data
             });
         default:
             return state;

@@ -1,13 +1,11 @@
 import * as types from './actionTypes';
 
 export function setTitleActive() {
-    console.log('1 setTitleActive');
     return {
         type: types.SET_TITLE_ACTIVE
     }
 }
 export function setGenreActive() {
-    console.log('1 setGenreActive');
     return {
         type: types.SET_GENRE_ACTIVE
     }
@@ -18,21 +16,22 @@ export function setSearchValue(val) {
         value: val
     }
 }
-export function setMoviesList(val) {
+export function sortByReleaseDate() {
     return {
-        type: types.SET_MOVIES_ARR,
-        value: val
+        type: types.SORT_RELEASE_DATE
     }
 }
-export function setReleaseDateActive(cb) {
+export function sortByRating() {
     return {
-        type: types.SET_REL_DATE_ACTIVE,
-        cb
+        type: types.SORT_RATING
     }
 }
-export function setRatingActive(cb) {
-    return {
-        type: types.SET_RATING_ACTIVE,
-        cb
+export function fetchMovies(url) {
+    return function(dispatch) {
+        fetch(url).then(res => res.json())
+            .then(movies => dispatch({
+                type: types.FETCH_MOVIES_SUCCESS,
+                movies
+            }));
     }
 }
