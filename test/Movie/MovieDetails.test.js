@@ -4,8 +4,6 @@ const fetchMock = require('fetch-mock');
 
 import { MovieDetails } from '../../src/components/Movie/MovieDetails';
 
-
-
 describe('MovieDetails Component', () => {
     let props, enzymeWrapper;
     beforeEach(function() {
