@@ -1,9 +1,11 @@
+import { shallow } from 'enzyme';
 import React from 'react';
 
 import SimilarMovies from '../../src/components/Movie/SimilarMovies';
 
-describe('Check Component creation', () => {
-    test('SimilarMovies component', () => {
+describe('SimilarMovies Component', () => {
+    let element;
+    beforeAll(() => {
         const moviesArray = [{
             id: 101,
             poster_path: '',
@@ -14,7 +16,9 @@ describe('Check Component creation', () => {
             runtime: 108,
             overview: 'A feel good movie'
         }];
-        const element = shallow(<SimilarMovies genre="Action" movies={moviesArray}/>);
+        element = shallow(<SimilarMovies genre="Action" movies={moviesArray}/>);
+    })
+    test('Snapshot test when moovies and genre are passed as props', () => {
         expect(element).toMatchSnapshot();
     });
 });

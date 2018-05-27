@@ -26,12 +26,15 @@ export function sortByRating() {
         type: types.SORT_RATING
     }
 }
+export function fetchMoviesSuccess(movies) {
+    return {
+        type: types.FETCH_MOVIES_SUCCESS,
+        movies
+    }
+}
 export function fetchMovies(url) {
     return function(dispatch) {
-        fetch(url).then(res => res.json())
-            .then(movies => dispatch({
-                type: types.FETCH_MOVIES_SUCCESS,
-                movies
-            }));
+        return fetch(url).then(res => res.json())
+            .then(movies => dispatch(fetchMoviesSuccess(movies)));
     }
 }

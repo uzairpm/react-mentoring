@@ -1,9 +1,11 @@
+import { shallow } from 'enzyme';
 import React from 'react';
 
 import MovieBanner from '../../src/components/Movie/MovieBanner';
 
-describe('Check Component creation', () => {
-    test('MovieBanner component', () => {
+describe('MovieBanner Component', () => {
+    let element;
+    beforeAll(() => {
         const movieObj = {
             poster_path: '',
             title: 'Feel Good',
@@ -13,7 +15,9 @@ describe('Check Component creation', () => {
             runtime: 108,
             overview: 'A feel good movie'
         };
-        const element = shallow(<MovieBanner movie={movieObj}/>);
+        element = shallow(<MovieBanner movie={movieObj}/>);
+    });
+    test('Snapshot test when a movie object is passed', () => {
         expect(element).toMatchSnapshot();
     });
 });

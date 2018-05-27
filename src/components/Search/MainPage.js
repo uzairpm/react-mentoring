@@ -12,12 +12,12 @@ import * as mainActions from '../../actions/mainActions';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-class MainPage extends Component {
+export class MainPage extends Component {
     constructor(props) {
         super(props);
         this.handleTitleClick = this.handleTitleClick.bind(this);
         this.handleGenreClick = this.handleGenreClick.bind(this);
-        this.handleSearchClick = this.handleSearchClick.bind(this);
+        this.refreshSearchResults = this.refreshSearchResults.bind(this);
         this.handleReleaseDateClick = this.handleReleaseDateClick.bind(this);
         this.handleRatingClick = this.handleRatingClick.bind(this);
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
@@ -27,9 +27,6 @@ class MainPage extends Component {
         let dateOrVote = (this.props.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
         let urlStr = `${Constants.baseURL}?search=${this.props.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
         this.props.actions.fetchMovies(urlStr);
-    }
-    handleSearchClick() {
-        this.refreshSearchResults();
     }
     handleTitleClick() {
         this.props.actions.setTitleActive();
@@ -55,7 +52,7 @@ class MainPage extends Component {
                     valueChangeHandler={this.valueChangeHandler}
                     titleClick={this.handleTitleClick}
                     genreClick={this.handleGenreClick}
-                    searchClick={this.handleSearchClick} />
+                    searchClick={this.refreshSearchResults} />
                 <SearchResults movies={this.props.movies}
                     releaseDate={this.props.sortByReleaseDate}
                     releaseDateClick={this.handleReleaseDateClick}

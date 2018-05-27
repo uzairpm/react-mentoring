@@ -32,13 +32,8 @@ export default function mainReducer(state = initialState, action) {
                 sortByReleaseDate: false,
                 movies: moviesTemp1
             });
-        case types.FETCH_MOVIES_REQUEST:
-            return Object.assign({}, state, {
-                isFetching: true
-            });
         case types.FETCH_MOVIES_SUCCESS:
             return Object.assign({}, state, {
-                isFetching: false,
                 movies: action.movies.data
             });
         default:

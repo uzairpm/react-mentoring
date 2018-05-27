@@ -14,7 +14,7 @@ import * as movieActions from '../../actions/movieActions';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-class MovieDetails extends Component {
+export class MovieDetails extends Component {
     constructor(props) {
         super(props);
     }

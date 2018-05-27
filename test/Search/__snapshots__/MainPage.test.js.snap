@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Component creation MainPage component 1`] = `
+exports[`MainPage Component Snapshot test with default props 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -22,15 +22,15 @@ ShallowWrapper {
           genreClick={[Function]}
           searchClick={[Function]}
           showSearchButton={false}
-          titleActive={true}
+          titleActive={undefined}
           titleClick={[Function]}
-          value=""
+          value={undefined}
           valueChangeHandler={[Function]}
         />,
         <SearchResults
-          movies={Array []}
+          movies={undefined}
           ratingClick={[Function]}
-          releaseDate={true}
+          releaseDate={undefined}
           releaseDateClick={[Function]}
         />,
       ],
@@ -45,9 +45,9 @@ ShallowWrapper {
           "genreClick": [Function],
           "searchClick": [Function],
           "showSearchButton": false,
-          "titleActive": true,
+          "titleActive": undefined,
           "titleClick": [Function],
-          "value": "",
+          "value": undefined,
           "valueChangeHandler": [Function],
         },
         "ref": null,
@@ -59,9 +59,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "movies": Array [],
+          "movies": undefined,
           "ratingClick": [Function],
-          "releaseDate": true,
+          "releaseDate": undefined,
           "releaseDateClick": [Function],
         },
         "ref": null,
@@ -82,15 +82,15 @@ ShallowWrapper {
             genreClick={[Function]}
             searchClick={[Function]}
             showSearchButton={false}
-            titleActive={true}
+            titleActive={undefined}
             titleClick={[Function]}
-            value=""
+            value={undefined}
             valueChangeHandler={[Function]}
           />,
           <SearchResults
-            movies={Array []}
+            movies={undefined}
             ratingClick={[Function]}
-            releaseDate={true}
+            releaseDate={undefined}
             releaseDateClick={[Function]}
           />,
         ],
@@ -105,9 +105,9 @@ ShallowWrapper {
             "genreClick": [Function],
             "searchClick": [Function],
             "showSearchButton": false,
-            "titleActive": true,
+            "titleActive": undefined,
             "titleClick": [Function],
-            "value": "",
+            "value": undefined,
             "valueChangeHandler": [Function],
           },
           "ref": null,
@@ -119,9 +119,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "movies": Array [],
+            "movies": undefined,
             "ratingClick": [Function],
-            "releaseDate": true,
+            "releaseDate": undefined,
             "releaseDateClick": [Function],
           },
           "ref": null,
