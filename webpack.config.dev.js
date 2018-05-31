@@ -32,6 +32,8 @@ module.exports = {
     ],
     devtool: 'inline-source-map',
     devServer: {
+        // https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writting-manually
+        // historyApiFallback: true,
         contentBase: './dist',
         port: 3000
     }

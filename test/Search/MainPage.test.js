@@ -18,7 +18,8 @@ describe('MainPage Component', () => {
                 sortByRating: jest.fn(),
                 setSearchValue: jest.fn(),
                 fetchMovies: jest.fn()
-            }
+            },
+            history: []
         };
         enzymeWrapper = shallow(<MainPage {...props} />);
     });

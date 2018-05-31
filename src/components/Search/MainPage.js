@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Route, Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
 
 import * as types from '../../actions/actionTypes';
 import Constants from '../Common/constants';
@@ -22,11 +23,25 @@ export class MainPage extends Component {
         this.handleRatingClick = this.handleRatingClick.bind(this);
         this.valueChangeHandler = this.valueChangeHandler.bind(this);
     }
+    componentDidMount() {
+        if (location.hash.indexOf('/search/') !== -1) {
+            const searchQuery = location.hash.substr(9);
+            if (searchQuery.length > 0) {
+                this.props.actions.setSearchValue(searchQuery);
+                document.getElementsByClassName('searchInput')[0].value = searchQuery;
+                setTimeout(this.refreshSearchResults, 100);
+            }
+        }
+    }
     refreshSearchResults() {
         let titleOrGenre = (this.props.titleActive === true) ? 'title' : 'genres';
         let dateOrVote = (this.props.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
         let urlStr = `${Constants.baseURL}?search=${this.props.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
         this.props.actions.fetchMovies(urlStr);
+        if ((location.hash.indexOf('/search/') !== -1 && location.hash.substr(9) !== this.props.searchText) ||
+            location.hash.indexOf('/search/') === -1) {
+            this.props.history.push(`/search/${this.props.searchText}`);
+        }
     }
     handleTitleClick() {
         this.props.actions.setTitleActive();
@@ -76,4 +91,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainPage);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MainPage));

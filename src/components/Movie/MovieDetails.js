@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
 
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
@@ -47,4 +48,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MovieDetails);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MovieDetails));

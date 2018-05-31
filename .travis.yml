@@ -9,5 +9,6 @@ branches:
   only:
   - task4
   - task5
+  - task6
 script:
   - npm test

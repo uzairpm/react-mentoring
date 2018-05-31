@@ -7,18 +7,12 @@ import storage from 'redux-persist/lib/storage';
 
 import rootReducer from '../reducers';
 
-const persistConfig = {
-    key: 'root',
-    storage
-};
-const persistedReducer = persistReducer(persistConfig, rootReducer);
-
 const initialState = {};
-const middleware = applyMiddleware(reduxImmutableStateInvariant(), logger, thunk);
+const middleware = applyMiddleware(reduxImmutableStateInvariant(), /* logger, */ thunk);
 
 export default function configureStore(initialState) {
     return createStore(
-        persistedReducer,
+        rootReducer,
         initialState,
         middleware
         // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
