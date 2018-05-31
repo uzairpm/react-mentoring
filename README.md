@@ -1,22 +1,27 @@
-
-<img src="https://api.travis-ci.org/uzairpm/react-mentoring.svg?branch=task5" />
+<img src="https://api.travis-ci.org/uzairpm/react-mentoring.svg?branch=task6" />
 
 The objectives of this branch are,
-1) Go through API docs in swagger: http://react-cdp-api.herokuapp.com/api-docs API Endpoint: http://react-cdp-api.herokuapp.com/
+1) Link app states between each other with React router.
 
-2) Make your components perform real AJAX requests.
+2) By default user lands on a new page with empty results state (caption 0).
 
-3) Move data fetches to actions and pass data to your components with redux.
+3) When user clicks on a film item, redirect him to:
+localhost/film/id
 
-4) Cover actions and reducers with unit tests.
+4) Handle invalid URLs, display create a 404 page, where user will be redirected in case of invalid URL.
 
-5) Add the ability to store your apps state offline and use it to start-up the app. You can take a look at redux-persist library for further reference.
+5) On switching search type or sorting type you shouldn’t switch any routes.
+
+6) When user performs a new search, you should redirect him to:
+localhost/search/Search%20Query
+
+7) When a new user lands on the page with such URL, you should perform search and display results.
 
 Available commands to run:
 
 ### `npm run test`
 ### `npm run test:coverage`
-### `npm run cypress:open`
+### `npm run test:e2e`
 ### `npm run start`
 ### `npm run start:dev`
 
