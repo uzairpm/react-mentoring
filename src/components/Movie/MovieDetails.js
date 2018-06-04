@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { withRouter } from 'react-router-dom';
 
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
@@ -7,61 +10,42 @@ import SimilarMovies from './SimilarMovies';
 import MovieBanner from './MovieBanner';
 import './moviedetails.css';
 
+import * as movieActions from '../../actions/movieActions';
+
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
-export default class MovieDetails extends Component {
+export class MovieDetails extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            movie: {},
-            selectedGenre: '',
-            similarMovies: []
-        };
     }
     componentDidMount() {
         let url = `${Constants.baseURL}/${this.props.match.params.id}`;
-        this.getRequest(url).then(response => {
-            this.populateState(response);
-            this.fetchSimilarMovies(response.genres[0]);
-        });
-    }
-    componentWillReceiveProps(nextProps) {
-        let url = `${Constants.baseURL}/${nextProps.match.params.id}`;
-        this.getRequest(url).then(response => {
-            this.populateState(response);
-            this.fetchSimilarMovies(response.genres[0]);
-        });
-    }
-    populateState(response) {
-        this.setState({
-            movie: response
-        });
-    }
-    fetchSimilarMovies(genre) {
-        let url = `${Constants.baseURL}?search=${genre}&searchBy=genres&sortBy=release_date&sortOrder=desc`;
-        this.getRequest(url)
-            .then(response => {
-                this.populateStateForSimilarMovies(genre, response.data);
-            });
-    }
-    getRequest(url) {
-        return fetch(url).then(res => res.json());
-    }
-    populateStateForSimilarMovies(genre, response) {
-        this.setState({
-            selectedGenre: genre,
-            similarMovies: response
-        });
+        this.props.actions.fetchMovieDetails(url);
     }
     render() {
         return (
             <div>
                 <Header showSearchButton={true} />
-                <MovieBanner movie={this.state.movie} />
-                <SimilarMovies genre={this.state.selectedGenre} movies={this.state.similarMovies} />
+                <MovieBanner movie={this.props.movie} />
+                <SimilarMovies genre={this.props.selectedGenre} movies={this.props.similarMovies} />
                 <Footer />
             </div>
         );
     }
 }
+
+function mapStateToProps(state, ownProps) {
+    return {
+        movie: state.movie.movie,
+        selectedGenre: state.movie.selectedGenre,
+        similarMovies: state.movie.similarMovies
+    }
+}
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(movieActions, dispatch)
+    }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MovieDetails));

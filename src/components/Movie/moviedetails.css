@@ -1,5 +1,5 @@
 .albumArt {
-    width: 250px;
+    max-width: 250px;
     border-radius: 5px;
 }
 .padding25 {

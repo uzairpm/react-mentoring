@@ -1,36 +1,50 @@
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import React from 'react';
 
-import MainPage from '../../src/components/Search/MainPage';
+import { MainPage } from '../../src/components/Search/MainPage';
 
 describe('MainPage Component', () => {
-    const element = shallow(<MainPage />);
     test('Snapshot test with default props', () => {
+        const element = shallow(<MainPage />);
         expect(element).toMatchSnapshot();
     });
-    test('Should update state when Title button is clicked', () => {
-        element.instance().handleTitleClick();
-        expect(element.state('titleActive')).toEqual(true);
+    let enzymeWrapper, props;
+    beforeEach(() => {
+        props = {
+            actions: {
+                setTitleActive: jest.fn(),
+                setGenreActive: jest.fn(),
+                sortByReleaseDate: jest.fn(),
+                sortByRating: jest.fn(),
+                setSearchValue: jest.fn(),
+                fetchMovies: jest.fn()
+            },
+            history: []
+        };
+        enzymeWrapper = shallow(<MainPage {...props} />);
     });
-    test('Should update state when Genre button is clicked', () => {
-        element.instance().handleGenreClick();
-        expect(element.state('titleActive')).toEqual(false);
+    test('Should call setTitleActive when Title button is clicked', () => {
+        enzymeWrapper.instance().handleTitleClick();
+        expect(props.actions.setTitleActive.mock.calls.length).toBe(1);
     });
-    test('Should update state when a search text is entered on the search bar', () => {
-        element.instance().valueChangeHandler({target: {value: 'mat'}});
-        expect(element.state('searchText')).toEqual('mat');
+    test('Should call setGenreActive when Genre button is clicked', () => {
+        enzymeWrapper.instance().handleGenreClick();
+        expect(props.actions.setGenreActive.mock.calls.length).toBe(1);
     });
-    test('Should update state when sorted based on Release date', () => {
-        element.instance().handleReleaseDateClick();
-        expect(element.state('sortByReleaseDate')).toEqual(true);
+    test('Should call setSearchValue when a search text is entered on the search bar', () => {
+        enzymeWrapper.instance().valueChangeHandler({target: {value: 'mat'}});
+        expect(props.actions.setSearchValue.mock.calls.length).toBe(1);
     });
-    test('Should update state when sorted based on Rating', () => {
-        element.instance().handleRatingClick();
-        expect(element.state('sortByReleaseDate')).toEqual(false);
+    test('Should call sortByReleaseDate when sorted based on Release date', () => {
+        enzymeWrapper.instance().handleReleaseDateClick();
+        expect(props.actions.sortByReleaseDate.mock.calls.length).toBe(1);
     });
-    test('Should populate state when populateState function is invoked', () => {
-        var movies = {test: 'test'};
-        element.instance().populateState(movies);
-        expect(element.state('movies').test).toEqual('test');
-    })
+    test('Should call sortByRating when sorted based on Rating', () => {
+        enzymeWrapper.instance().handleRatingClick();
+        expect(props.actions.sortByRating.mock.calls.length).toBe(1);
+    });
+    test('Should call fetchMovies when search is triggered', () => {
+        enzymeWrapper.instance().refreshSearchResults();
+        expect(props.actions.fetchMovies.mock.calls.length).toBe(1);
+    });
 });
