@@ -10,9 +10,7 @@ describe('MovieDetails Component', () => {
         // global.fetch = fetchMock;
         const match = { params: { id: 603 } };
         props = {
-            actions: {
-                fetchMovieDetails: jest.fn()
-            }
+            fetchMovieDetails: jest.fn()
         };
         enzymeWrapper = shallow(<MovieDetails match={match} {...props} />);
     });
@@ -20,6 +18,6 @@ describe('MovieDetails Component', () => {
         expect(enzymeWrapper).toMatchSnapshot();
     });
     test('should call fetchMovieDetails when component gets mounted', () => {
-        expect(props.actions.fetchMovieDetails.mock.calls.length).toBe(1);
+        expect(props.fetchMovieDetails.mock.calls.length).toBe(1);
     });
 });

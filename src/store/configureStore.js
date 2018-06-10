@@ -5,13 +5,13 @@ import logger from 'redux-logger';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import rootReducer from '../reducers';
+import appReducer from '../reducers';
 
 const persistConfig = {
     key: 'root',
     storage
 };
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+const persistedReducer = persistReducer(persistConfig, appReducer);
 
 const initialState = {};
 const middleware = applyMiddleware(reduxImmutableStateInvariant(), logger, thunk);

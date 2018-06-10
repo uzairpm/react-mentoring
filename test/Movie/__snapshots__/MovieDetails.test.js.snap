@@ -5,15 +5,13 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <MovieDetails
-    actions={
-      Object {
-        "fetchMovieDetails": [MockFunction] {
-          "calls": Array [
-            Array [
-              "http://react-cdp-api.herokuapp.com/movies/603",
-            ],
+    fetchMovieDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "http://react-cdp-api.herokuapp.com/movies/603",
           ],
-        },
+        ],
       }
     }
     match={
