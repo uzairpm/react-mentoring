@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import SimilarMovies from './SimilarMovies';
-import MovieBanner from './MovieBanner';
+import MovieBannerContainer from './containers/MovieBannerContainer';
+import SimilarMoviesContainer from './containers/SimilarMoviesContainer';
 import * as selectors from '../../selectors';
 import * as appActions from '../../actions';
 import './moviedetails.css';
@@ -25,8 +25,8 @@ export class MovieDetails extends Component {
         return (
             <div>
                 <Header showSearchButton />
-                <MovieBanner movie={this.props.movie} />
-                <SimilarMovies genre={this.props.selectedGenre} movies={this.props.similarMovies} />
+                <MovieBannerContainer />
+                <SimilarMoviesContainer />
                 <Footer />
             </div>
         );

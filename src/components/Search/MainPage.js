@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
+import HeaderContainer from '../Header/containers/HeaderContainer';
+import SearchResultsContainer from './containers/SearchResultsContainer';
 import SearchResults from '../Search/SearchResults';
 import * as selectors from '../../selectors';
 import * as appActions from '../../actions';
@@ -45,17 +47,8 @@ export class MainPage extends Component {
     render() {
         return (
             <div>
-                <Header showSearchButton={false}
-                    titleActive={this.props.titleActive}
-                    value={this.props.searchText}
-                    valueChangeHandler={this.valueChangeHandler}
-                    titleClick={this.handleTitleClick}
-                    genreClick={this.handleGenreClick}
-                    searchClick={this.refreshSearchResults} />
-                <SearchResults movies={this.props.movies}
-                    releaseDate={this.props.sortByReleaseDate}
-                    releaseDateClick={this.handleReleaseDateClick}
-                    ratingClick={this.handleRatingClick} />
+                <HeaderContainer />
+                <SearchResultsContainer />
             </div>
         );
     }

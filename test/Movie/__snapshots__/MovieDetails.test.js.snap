@@ -38,14 +38,8 @@ ShallowWrapper {
         <Header
           showSearchButton={true}
         />,
-        <MovieBanner
-          movie={undefined}
-          vote_average={0}
-        />,
-        <SimilarMovies
-          genre={undefined}
-          movies={undefined}
-        />,
+        <Connect(MovieBanner) />,
+        <Connect(SimilarMovies) />,
         <Footer />,
       ],
     },
@@ -65,11 +59,8 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "movie": undefined,
-          "vote_average": 0,
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -77,11 +68,8 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "genre": undefined,
-          "movies": undefined,
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -108,14 +96,8 @@ ShallowWrapper {
           <Header
             showSearchButton={true}
           />,
-          <MovieBanner
-            movie={undefined}
-            vote_average={0}
-          />,
-          <SimilarMovies
-            genre={undefined}
-            movies={undefined}
-          />,
+          <Connect(MovieBanner) />,
+          <Connect(SimilarMovies) />,
           <Footer />,
         ],
       },
@@ -135,11 +117,8 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "movie": undefined,
-            "vote_average": 0,
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -147,11 +126,8 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "genre": undefined,
-            "movies": undefined,
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

@@ -18,21 +18,8 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header
-          genreClick={[Function]}
-          searchClick={[Function]}
-          showSearchButton={false}
-          titleActive={undefined}
-          titleClick={[Function]}
-          value={undefined}
-          valueChangeHandler={[Function]}
-        />,
-        <SearchResults
-          movies={undefined}
-          ratingClick={[Function]}
-          releaseDate={undefined}
-          releaseDateClick={[Function]}
-        />,
+        <Connect(Header) />,
+        <Connect(SearchResults) />,
       ],
     },
     "ref": null,
@@ -40,16 +27,8 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "genreClick": [Function],
-          "searchClick": [Function],
-          "showSearchButton": false,
-          "titleActive": undefined,
-          "titleClick": [Function],
-          "value": undefined,
-          "valueChangeHandler": [Function],
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -58,12 +37,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {
-          "movies": undefined,
-          "ratingClick": [Function],
-          "releaseDate": undefined,
-          "releaseDateClick": [Function],
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -78,21 +52,8 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header
-            genreClick={[Function]}
-            searchClick={[Function]}
-            showSearchButton={false}
-            titleActive={undefined}
-            titleClick={[Function]}
-            value={undefined}
-            valueChangeHandler={[Function]}
-          />,
-          <SearchResults
-            movies={undefined}
-            ratingClick={[Function]}
-            releaseDate={undefined}
-            releaseDateClick={[Function]}
-          />,
+          <Connect(Header) />,
+          <Connect(SearchResults) />,
         ],
       },
       "ref": null,
@@ -100,16 +61,8 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "genreClick": [Function],
-            "searchClick": [Function],
-            "showSearchButton": false,
-            "titleActive": undefined,
-            "titleClick": [Function],
-            "value": undefined,
-            "valueChangeHandler": [Function],
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -118,12 +71,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "movies": undefined,
-            "ratingClick": [Function],
-            "releaseDate": undefined,
-            "releaseDateClick": [Function],
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

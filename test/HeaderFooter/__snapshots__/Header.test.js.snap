@@ -196,14 +196,7 @@ ShallowWrapper {
             netflixroulette
           </a>
         </nav>,
-        <SearchBox
-          genreClick={undefined}
-          searchClick={undefined}
-          titleActive={undefined}
-          titleClick={undefined}
-          valChange={undefined}
-          value={undefined}
-        />,
+        <Connect(SearchBox) />,
       ],
       "className": "container",
     },
@@ -248,14 +241,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {
-          "genreClick": undefined,
-          "searchClick": undefined,
-          "titleActive": undefined,
-          "titleClick": undefined,
-          "valChange": undefined,
-          "value": undefined,
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -280,14 +266,7 @@ ShallowWrapper {
               netflixroulette
             </a>
           </nav>,
-          <SearchBox
-            genreClick={undefined}
-            searchClick={undefined}
-            titleActive={undefined}
-            titleClick={undefined}
-            valChange={undefined}
-            value={undefined}
-          />,
+          <Connect(SearchBox) />,
         ],
         "className": "container",
       },
@@ -332,14 +311,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "genreClick": undefined,
-            "searchClick": undefined,
-            "titleActive": undefined,
-            "titleClick": undefined,
-            "valChange": undefined,
-            "value": undefined,
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
