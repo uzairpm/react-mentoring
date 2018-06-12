@@ -4,7 +4,6 @@ import * as types from './actionTypes';
 export const setTitleActive = () => ({ type: types.SET_TITLE_ACTIVE });
 export const setGenreActive = () => ({ type: types.SET_GENRE_ACTIVE });
 export const setSearchValue = (val) => ({ type: types.SET_SEARCH_STR, payload: val });
-export const setSearchValue2 = (e) => ({ type: types.SET_SEARCH_STR, payload: e.target.value });
 export const sortByReleaseDate = () => ({ type: types.SORT_RELEASE_DATE });
 export const sortByRating = () => ({ type: types.SORT_RATING });
 

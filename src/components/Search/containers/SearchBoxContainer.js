@@ -4,15 +4,15 @@ import SearhBox from '../SearchBox';
 import * as selectors from '../../../selectors';
 import * as appActions from '../../../actions';
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
     return {
         titleActive: selectors.getTitleActiveState(state),
-        // searchText: selectors.getSearchtext(state),
+        value: selectors.getSearchtext(state)
     }
 }
 
 const mapDispatchToProps = {
-    valChange: appActions.setSearchValue2,
+    valChange: appActions.setSearchValue,
     titleClick: appActions.setTitleActive,
     genreClick: appActions.setGenreActive,
     searchClick: appActions.refreshSearchResults

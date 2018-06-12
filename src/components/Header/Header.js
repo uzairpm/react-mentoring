@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
 import BackButton from './BackButton';
-import SearchBox from '../Search/SearchBox';
 import SearchBoxContainer from '../Search/containers/SearchBoxContainer';
 import './header.css';
 

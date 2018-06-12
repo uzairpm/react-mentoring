@@ -6,7 +6,6 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import MovieBannerContainer from './containers/MovieBannerContainer';
 import SimilarMoviesContainer from './containers/SimilarMoviesContainer';
-import * as selectors from '../../selectors';
 import * as appActions from '../../actions';
 import './moviedetails.css';
 
@@ -34,16 +33,10 @@ export class MovieDetails extends Component {
 }
 
 function mapStateToProps(state, ownProps) {
-    return {
-        movie: selectors.getMovie(state),
-        selectedGenre: selectors.getSelectedGenre(state),
-        similarMovies: selectors.getSimilarMovies(state)
-    }
+    return { }
 }
-function mapDispatchToProps(dispatch) {
-    return {
-        fetchMovieDetails: (url) => dispatch(appActions.fetchMovieDetails(url))
-    }
+const mapDispatchToProps = {
+    fetchMovieDetails: appActions.fetchMovieDetails
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieDetails);

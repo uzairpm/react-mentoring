@@ -18,6 +18,6 @@ describe('MovieDetails Component', () => {
         expect(enzymeWrapper).toMatchSnapshot();
     });
     test('should call fetchMovieDetails when component gets mounted', () => {
-        expect(props.fetchMovieDetails.mock.calls.length).toBe(1);
+        expect(props.fetchMovieDetails).toHaveBeenCalledTimes(1);
     });
 });

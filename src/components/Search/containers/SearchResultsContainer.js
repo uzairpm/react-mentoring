@@ -4,7 +4,7 @@ import SearchResults from '../SearchResults';
 import * as selectors from '../../../selectors';
 import * as appActions from '../../../actions';
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state) {
     return {
         movies: selectors.getMovies(state),
         releaseDate: selectors.getSortByReleaseDateState(state)
