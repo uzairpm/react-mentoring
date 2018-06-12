@@ -7,18 +7,26 @@ import storage from 'redux-persist/lib/storage';
 
 import appReducer from '../reducers';
 
-const persistConfig = {
+/* const persistConfig = {
     key: 'root',
     storage
 };
-const persistedReducer = persistReducer(persistConfig, appReducer);
+const persistedReducer = persistReducer(persistConfig, appReducer); */
 
-const initialState = {};
+const initialState = {
+    movies: [],
+    titleActive: true,
+    sortByReleaseDate: true,
+    searchText: '',
+    movie: {},
+    selectedGenre: '',
+    similarMovies: []
+};
 const middleware = applyMiddleware(reduxImmutableStateInvariant(), logger, thunk);
 
 export default function configureStore(initialState) {
     return createStore(
-        persistedReducer,
+        appReducer,
         initialState,
         middleware
         // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

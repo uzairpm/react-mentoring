@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+// import { connect } from 'react-redux';
 
+// import * as selectors from '../../selectors';
 import HeaderContainer from '../Header/containers/HeaderContainer';
 import SearchResultsContainer from './containers/SearchResultsContainer';
 
@@ -19,4 +21,5 @@ export class MainPage extends Component {
         );
     }
 }
+
 export default MainPage;
