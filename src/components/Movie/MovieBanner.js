@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import PropTypeShapes from '../Common/PropTypeShapes';
 
@@ -18,7 +18,7 @@ const MovieBanner = (props) => {
                 <div className="card-body">
                     <div className="row">
                         <div className="col-sm-3 col-md-3 col-lg-3">
-                            <img className="albumArt" src={poster_path} />
+                            <img className="img-fluid" src={poster_path} />
                         </div>
                         <div className="col-sm-9 col-md-9 col-lg-9 padding25">
                             <h4 className="movieTitle mr-3">{title}</h4>

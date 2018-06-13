@@ -19,20 +19,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
-          genreClick={[Function]}
-          searchClick={[Function]}
           showSearchButton={false}
-          titleActive={true}
-          titleClick={[Function]}
-          value=""
-          valueChangeHandler={[Function]}
         />,
-        <SearchResults
-          movies={Array []}
-          ratingClick={[Function]}
-          releaseDate={true}
-          releaseDateClick={[Function]}
-        />,
+        <Connect(SearchResults) />,
       ],
     },
     "ref": null,
@@ -42,13 +31,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "genreClick": [Function],
-          "searchClick": [Function],
           "showSearchButton": false,
-          "titleActive": true,
-          "titleClick": [Function],
-          "value": "",
-          "valueChangeHandler": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -58,12 +41,7 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {
-          "movies": Array [],
-          "ratingClick": [Function],
-          "releaseDate": true,
-          "releaseDateClick": [Function],
-        },
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -79,20 +57,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
-            genreClick={[Function]}
-            searchClick={[Function]}
             showSearchButton={false}
-            titleActive={true}
-            titleClick={[Function]}
-            value=""
-            valueChangeHandler={[Function]}
           />,
-          <SearchResults
-            movies={Array []}
-            ratingClick={[Function]}
-            releaseDate={true}
-            releaseDateClick={[Function]}
-          />,
+          <Connect(SearchResults) />,
         ],
       },
       "ref": null,
@@ -102,13 +69,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "genreClick": [Function],
-            "searchClick": [Function],
             "showSearchButton": false,
-            "titleActive": true,
-            "titleClick": [Function],
-            "value": "",
-            "valueChangeHandler": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -118,12 +79,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "movies": Array [],
-            "ratingClick": [Function],
-            "releaseDate": true,
-            "releaseDateClick": [Function],
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

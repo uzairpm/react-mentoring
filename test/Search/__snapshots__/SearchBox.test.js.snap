@@ -39,7 +39,7 @@ ShallowWrapper {
         >
           <input
             className="form-control rounded-0 searchInput"
-            onChange={[MockFunction]}
+            onChange={[Function]}
             onKeyPress={[Function]}
             type="text"
             value="mat"
@@ -96,7 +96,7 @@ ShallowWrapper {
         "props": Object {
           "children": <input
             className="form-control rounded-0 searchInput"
-            onChange={[MockFunction]}
+            onChange={[Function]}
             onKeyPress={[Function]}
             type="text"
             value="mat"
@@ -110,7 +110,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "form-control rounded-0 searchInput",
-            "onChange": [MockFunction],
+            "onChange": [Function],
             "onKeyPress": [Function],
             "type": "text",
             "value": "mat",
@@ -197,7 +197,7 @@ ShallowWrapper {
           >
             <input
               className="form-control rounded-0 searchInput"
-              onChange={[MockFunction]}
+              onChange={[Function]}
               onKeyPress={[Function]}
               type="text"
               value="mat"
@@ -254,7 +254,7 @@ ShallowWrapper {
           "props": Object {
             "children": <input
               className="form-control rounded-0 searchInput"
-              onChange={[MockFunction]}
+              onChange={[Function]}
               onKeyPress={[Function]}
               type="text"
               value="mat"
@@ -268,7 +268,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "form-control rounded-0 searchInput",
-              "onChange": [MockFunction],
+              "onChange": [Function],
               "onKeyPress": [Function],
               "type": "text",
               "value": "mat",
@@ -382,7 +382,7 @@ ShallowWrapper {
         >
           <input
             className="form-control rounded-0 searchInput"
-            onChange={[MockFunction]}
+            onChange={[Function]}
             onKeyPress={[Function]}
             type="text"
             value="matrix"
@@ -433,7 +433,7 @@ ShallowWrapper {
         "props": Object {
           "children": <input
             className="form-control rounded-0 searchInput"
-            onChange={[MockFunction]}
+            onChange={[Function]}
             onKeyPress={[Function]}
             type="text"
             value="matrix"
@@ -447,7 +447,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "className": "form-control rounded-0 searchInput",
-            "onChange": [MockFunction],
+            "onChange": [Function],
             "onKeyPress": [Function],
             "type": "text",
             "value": "matrix",
@@ -530,7 +530,7 @@ ShallowWrapper {
           >
             <input
               className="form-control rounded-0 searchInput"
-              onChange={[MockFunction]}
+              onChange={[Function]}
               onKeyPress={[Function]}
               type="text"
               value="matrix"
@@ -581,7 +581,7 @@ ShallowWrapper {
           "props": Object {
             "children": <input
               className="form-control rounded-0 searchInput"
-              onChange={[MockFunction]}
+              onChange={[Function]}
               onKeyPress={[Function]}
               type="text"
               value="matrix"
@@ -595,7 +595,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "className": "form-control rounded-0 searchInput",
-              "onChange": [MockFunction],
+              "onChange": [Function],
               "onKeyPress": [Function],
               "type": "text",
               "value": "matrix",

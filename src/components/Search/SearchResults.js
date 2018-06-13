@@ -13,10 +13,11 @@ export default class SearchResults extends Component {
         return (
             <div className="container">
                 { this.props.movies.length === 0 && <NoResults/> }
-                { this.props.movies.length > 0 && <MovieCards movies={this.props.movies} 
+                { this.props.movies.length > 0 && <MovieCards
+                    movies={this.props.movies} 
                     releaseDate={this.props.releaseDate}
                     releaseDateClick={this.props.releaseDateClick}
-                    ratingClick={this.props.ratingClick}/>}
+                    ratingClick={this.props.ratingClick} />}
             </div>
         );
     }

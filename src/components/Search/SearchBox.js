@@ -20,7 +20,7 @@ export default class SearchBox extends Component {
                 <div className="input-group mb-3">
                     <input type="text" 
                         className="form-control rounded-0 searchInput"
-                        onChange={ this.props.valChange }
+                        onChange={(e) => this.props.valChange(e.target.value) }
                         value={ this.props.value }
                         onKeyPress={this._handleKeyPress} />
                 </div>
