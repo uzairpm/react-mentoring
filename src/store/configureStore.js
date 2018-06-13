@@ -13,15 +13,7 @@ import appReducer from '../reducers';
 };
 const persistedReducer = persistReducer(persistConfig, appReducer); */
 
-const initialState = {
-    movies: [],
-    titleActive: true,
-    sortByReleaseDate: true,
-    searchText: '',
-    movie: {},
-    selectedGenre: '',
-    similarMovies: []
-};
+const initialState = {};
 const middleware = applyMiddleware(reduxImmutableStateInvariant(), logger, thunk);
 
 export default function configureStore(initialState) {

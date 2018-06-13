@@ -8,6 +8,17 @@ export default class SearchBox extends Component {
         super(props);
         this._handleKeyPress = this._handleKeyPress.bind(this);
     }
+    componentDidMount() {
+        if (location.hash.indexOf('/search/') !== -1) {
+            const searchQuery = location.hash.substr(9);
+            if (searchQuery.length > 0) {
+                this.props.titleClick();
+                this.props.valChange(searchQuery);
+                document.getElementsByClassName('searchInput')[0].value = searchQuery;
+                setTimeout(this.props.searchClick, 100);
+            }
+        }
+    }
     _handleKeyPress(e) {
         if (e.key === 'Enter') {
             this.props.searchClick();

@@ -18,8 +18,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(Header) />,
-        <Connect(SearchResults) />,
+        <Header
+          showSearchButton={false}
+        />,
+        <withRouter(Connect(SearchResults)) />,
       ],
     },
     "ref": null,
@@ -27,8 +29,10 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "function",
+        "props": Object {
+          "showSearchButton": false,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -36,7 +40,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
@@ -52,8 +56,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(Header) />,
-          <Connect(SearchResults) />,
+          <Header
+            showSearchButton={false}
+          />,
+          <withRouter(Connect(SearchResults)) />,
         ],
       },
       "ref": null,
@@ -61,8 +67,10 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
+          "nodeType": "function",
+          "props": Object {
+            "showSearchButton": false,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -70,7 +78,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {},
           "ref": null,
           "rendered": null,

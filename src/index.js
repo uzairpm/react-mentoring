@@ -17,10 +17,11 @@ else
     console.log("Running development build", VERSION);
 
 const store = configureStore({});
-//let persistor = persistStore(store);
-
-/* <PersistGate loading={null} persistor={persistor}>
-</PersistGate> */
+/*let persistor = persistStore(store); */
+/* 
+    <PersistGate loading={null} persistor={persistor}>
+    </PersistGate>
+ */
 
 ReactDOM.render(
     <Provider store={store}>
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Router>
                 <Switch>
                     <Route exact path="/" component={MainPage} />
+                    <Route path="/search/:query" component={MainPage} />
                     <Route path="/film/:id" component={MovieDetails} />
                     <Route component={NoMatch404} />
                 </Switch>

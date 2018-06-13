@@ -13,6 +13,10 @@ export const refreshSearchResults = () => (dispatch, getState) => {
     const dateOrVote = (state.sortByReleaseDate === true) ? 'release_date' : 'vote_average';
     const urlStr = `${Constants.baseURL}?search=${state.searchText}&searchBy=${titleOrGenre}&sortBy=${dateOrVote}&sortOrder=desc`;
     dispatch(fetchMovies(urlStr));
+    if ((location.hash.indexOf('/search/') !== -1 && location.hash.substr(9) !== state.searchText) ||
+        location.hash.indexOf('/search/') === -1) {
+        location.hash = `/search/${state.searchText}`;
+    }
 }
 /* MoviePage actions */
 export const fetchMoviesRequest = () => ({ type: types.FETCH_MOVIES_REQUEST });
