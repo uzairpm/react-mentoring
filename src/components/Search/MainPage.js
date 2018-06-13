@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-// import { connect } from 'react-redux';
 
-// import * as selectors from '../../selectors';
 import Header from '../Header/Header';
 import SearchResultsContainer from './containers/SearchResultsContainer';
 
