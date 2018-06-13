@@ -32,11 +32,8 @@ export class MovieDetails extends Component {
     }
 }
 
-function mapStateToProps(state, ownProps) {
-    return { }
-}
 const mapDispatchToProps = {
     fetchMovieDetails: appActions.fetchMovieDetails
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(MovieDetails);
+export default connect(null, mapDispatchToProps)(MovieDetails);

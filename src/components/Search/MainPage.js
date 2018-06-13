@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import HeaderContainer from '../Header/containers/HeaderContainer';
+import Header from '../Header/Header';
 import SearchResultsContainer from './containers/SearchResultsContainer';
 
 require('es6-promise').polyfill();
@@ -13,7 +13,7 @@ export class MainPage extends Component {
     render() {
         return (
             <div>
-                <HeaderContainer />
+                <Header showSearchButton={false} />
                 <SearchResultsContainer />
             </div>
         );
