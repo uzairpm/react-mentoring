@@ -14,8 +14,7 @@ export default class SearchBox extends Component {
             if (searchQuery.length > 0) {
                 this.props.titleClick();
                 this.props.valChange(searchQuery);
-                document.getElementsByClassName('searchInput')[0].value = searchQuery;
-                setTimeout(this.props.searchClick, 100);
+                this.props.searchClick();
             }
         }
     }
