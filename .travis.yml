@@ -10,6 +10,8 @@ branches:
   - task4
   - task5
   - task6_from5
+  - task7
+  - task8
 script:
   - npm test -- --coverage
 after_script:
