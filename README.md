@@ -2,28 +2,26 @@
 [![Coverage Status](https://coveralls.io/repos/github/uzairpm/react-mentoring/badge.svg?branch=task6)](https://coveralls.io/github/uzairpm/react-mentoring?branch=task6)
 
 The objectives of this branch are,
-1) Link app states between each other with React router.
 
-2) By default user lands on a new page with empty results state (caption 0).
+Server Side Rendering
 
-3) When user clicks on a film item, redirect him to:
+Implement server rendering in your NodeJS application.
+
+Use async actions, redux should provide initial state from server.
+
+Server should handle query parameters to compute correct initial state.
+
+Implement route masking. Next.js provides this functionality out of the box, but its usage is not required. Example of route masking:
+
+localhost/search/Hello%20Friend
+
 localhost/film/id
 
-4) Handle invalid URLs, display create a 404 page, where user will be redirected in case of invalid URL.
-
-5) On switching search type or sorting type you shouldn’t switch any routes.
-
-6) When user performs a new search, you should redirect him to:
-localhost/search/Search%20Query
-
-7) When a new user lands on the page with such URL, you should perform search and display results.
+Add code splitting to your app. You can use dynamic import() syntax in conjunction with webpack, some library (react-loadable), or next.js.
 
 Available commands to run:
 
-### `npm run test`
-### `npm run test:coverage`
-### `npm run test:e2e`
-### `npm run start`
-### `npm run start:dev`
+### `npm run build`
+### `npm run start:exp`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
