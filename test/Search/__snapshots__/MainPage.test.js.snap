@@ -21,7 +21,7 @@ ShallowWrapper {
         <Header
           showSearchButton={false}
         />,
-        <Connect(SearchResults) />,
+        <Connect(withRouter(SearchResults)) />,
       ],
     },
     "ref": null,
@@ -59,7 +59,7 @@ ShallowWrapper {
           <Header
             showSearchButton={false}
           />,
-          <Connect(SearchResults) />,
+          <Connect(withRouter(SearchResults)) />,
         ],
       },
       "ref": null,

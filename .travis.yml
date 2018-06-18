@@ -9,5 +9,8 @@ branches:
   only:
   - task4
   - task5
+  - task6_from5
 script:
-  - npm test
+  - npm test -- --coverage
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls

@@ -1,4 +1,6 @@
+import { compose } from 'redux'
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import SearchResults from '../SearchResults';
 import * as selectors from '../../../selectors';
@@ -16,4 +18,7 @@ const mapDispatchToProps = {
     ratingClick: appActions.sortByRating
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
+export default compose(
+    connect(mapStateToProps, mapDispatchToProps),
+    withRouter
+)(SearchResults);

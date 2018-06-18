@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import Constants from '../Common/constants';
 import Header from '../Header/Header';
@@ -36,4 +37,4 @@ const mapDispatchToProps = {
     fetchMovieDetails: appActions.fetchMovieDetails
 }
 
-export default connect(null, mapDispatchToProps)(MovieDetails);
+export default withRouter(connect(null, mapDispatchToProps)(MovieDetails));

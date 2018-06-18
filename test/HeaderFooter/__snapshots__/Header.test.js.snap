@@ -196,7 +196,7 @@ ShallowWrapper {
             netflixroulette
           </a>
         </nav>,
-        <Connect(SearchBox) />,
+        <Connect(withRouter(SearchBox)) />,
       ],
       "className": "container",
     },
@@ -266,7 +266,7 @@ ShallowWrapper {
               netflixroulette
             </a>
           </nav>,
-          <Connect(SearchBox) />,
+          <Connect(withRouter(SearchBox)) />,
         ],
         "className": "container",
       },

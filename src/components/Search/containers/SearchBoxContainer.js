@@ -1,6 +1,8 @@
+import { compose } from 'redux';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
-import SearhBox from '../SearchBox';
+import SearchBox from '../SearchBox';
 import * as selectors from '../../../selectors';
 import * as appActions from '../../../actions';
 
@@ -18,4 +20,7 @@ const mapDispatchToProps = {
     searchClick: appActions.refreshSearchResults
 }
 
-export default connect(mapStateToProps , mapDispatchToProps)(SearhBox);
+export default compose(
+    connect(mapStateToProps , mapDispatchToProps),
+    withRouter
+)(SearchBox);
