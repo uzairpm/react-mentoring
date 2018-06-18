@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 
 import Button from '../Common/Button';
 
+const searchFilterBar = {
+    padding: '5px 15px'
+};
+
 const SearchFilter = (props) => (
     <div className="card">
-        <div className="searchFilterBar">
+        <div className="searchFilterBar" style={searchFilterBar}>
             {props.resultCount} movies found
             <div className="float-right">
                 <label className="mr-3">Sort by</label>
