@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/uzairpm/react-mentoring.svg?branch=task6)](https://travis-ci.org/uzairpm/react-mentoring)
-[![Coverage Status](https://coveralls.io/repos/github/uzairpm/react-mentoring/badge.svg?branch=task6)](https://coveralls.io/github/uzairpm/react-mentoring?branch=task6)
+[![Build Status](https://travis-ci.org/uzairpm/react-mentoring.svg?branch=task7)](https://travis-ci.org/uzairpm/react-mentoring)
+[![Coverage Status](https://coveralls.io/repos/github/uzairpm/react-mentoring/badge.svg?branch=task7)](https://coveralls.io/github/uzairpm/react-mentoring?branch=task6)
 
 The objectives of this branch are,
 
