@@ -14,12 +14,12 @@ describe('SearchBox Component', () => {
         expect(element).toMatchSnapshot();
     });
     test('Should trigger search when Enter key is pressed', () => {
-        element.instance()._handleKeyPress({key: 'Enter'});
+        element.instance().handleKeyPress({key: 'Enter'});
         expect(onClickSearch).toHaveBeenCalled();
     });
     test('Should NOT trigger search when Shift key is pressed', () => {
         const onClickSearch2 = jest.fn();
-        element.instance()._handleKeyPress({key: 'Shift'});
+        element.instance().handleKeyPress({key: 'Shift'});
         expect(onClickSearch2).toHaveBeenCalledTimes(0);
     });
     test('Snapshot test with custom values for props', () => {

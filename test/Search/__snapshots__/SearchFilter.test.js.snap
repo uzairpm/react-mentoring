@@ -22,9 +22,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="searchFilterBar"
-      >
+      "children": <styled.div>
         2
          movies found
         <div
@@ -46,14 +44,14 @@ ShallowWrapper {
             label="Rating"
           />
         </div>
-      </div>,
+      </styled.div>,
       "className": "card",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           2,
@@ -78,7 +76,6 @@ ShallowWrapper {
             />
           </div>,
         ],
-        "className": "searchFilterBar",
       },
       "ref": null,
       "rendered": Array [
@@ -152,7 +149,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
     "type": "div",
   },
@@ -162,9 +159,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="searchFilterBar"
-        >
+        "children": <styled.div>
           2
            movies found
           <div
@@ -186,14 +181,14 @@ ShallowWrapper {
               label="Rating"
             />
           </div>
-        </div>,
+        </styled.div>,
         "className": "card",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             2,
@@ -218,7 +213,6 @@ ShallowWrapper {
               />
             </div>,
           ],
-          "className": "searchFilterBar",
         },
         "ref": null,
         "rendered": Array [
@@ -292,7 +286,7 @@ ShallowWrapper {
             "type": "div",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
       "type": "div",
     },
@@ -329,9 +323,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="searchFilterBar"
-      >
+      "children": <styled.div>
         3
          movies found
         <div
@@ -353,14 +345,14 @@ ShallowWrapper {
             label="Rating"
           />
         </div>
-      </div>,
+      </styled.div>,
       "className": "card",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           3,
@@ -385,7 +377,6 @@ ShallowWrapper {
             />
           </div>,
         ],
-        "className": "searchFilterBar",
       },
       "ref": null,
       "rendered": Array [
@@ -459,7 +450,7 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
     "type": "div",
   },
@@ -469,9 +460,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="searchFilterBar"
-        >
+        "children": <styled.div>
           3
            movies found
           <div
@@ -493,14 +482,14 @@ ShallowWrapper {
               label="Rating"
             />
           </div>
-        </div>,
+        </styled.div>,
         "className": "card",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             3,
@@ -525,7 +514,6 @@ ShallowWrapper {
               />
             </div>,
           ],
-          "className": "searchFilterBar",
         },
         "ref": null,
         "rendered": Array [
@@ -599,7 +587,7 @@ ShallowWrapper {
             "type": "div",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
       "type": "div",
     },

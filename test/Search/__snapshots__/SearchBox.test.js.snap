@@ -26,7 +26,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
         <p
@@ -37,7 +37,7 @@ ShallowWrapper {
         <div
           className="input-group mb-3"
         >
-          <input
+          <styled.input
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
@@ -50,18 +50,18 @@ ShallowWrapper {
         >
           SEARCH BY
         </label>,
-        <Button
-          className="widerButton btn btn-sm mr-3 btn-outline-dark"
+        <Styled(Button)
+          className="btn btn-sm mr-3 btn-outline-dark"
           clickHandler={undefined}
           label="TITLE"
         />,
-        <Button
-          className="widerButton btn btn-sm btn-dark"
+        <Styled(Button)
+          className="btn btn-sm btn-dark"
           clickHandler={undefined}
           label="GENRE"
         />,
-        <Button
-          className="widerButton btn btn-primary btn-sm float-right"
+        <Styled(Button)
+          className="btn btn-primary btn-sm float-right"
           clickHandler={
             [MockFunction] {
               "calls": Array [
@@ -94,7 +94,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <input
+          "children": <styled.input
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
@@ -107,7 +107,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "className": "form-control rounded-0 searchInput",
             "onChange": [Function],
@@ -117,7 +117,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": "input",
+          "type": [Function],
         },
         "type": "div",
       },
@@ -138,7 +138,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
+          "className": "btn btn-sm mr-3 btn-outline-dark",
           "clickHandler": undefined,
           "label": "TITLE",
         },
@@ -151,7 +151,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-sm btn-dark",
+          "className": "btn btn-sm btn-dark",
           "clickHandler": undefined,
           "label": "GENRE",
         },
@@ -164,7 +164,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-primary btn-sm float-right",
+          "className": "btn btn-primary btn-sm float-right",
           "clickHandler": [MockFunction] {
             "calls": Array [
               Array [],
@@ -178,13 +178,13 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <p
@@ -195,7 +195,7 @@ ShallowWrapper {
           <div
             className="input-group mb-3"
           >
-            <input
+            <styled.input
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
@@ -208,18 +208,18 @@ ShallowWrapper {
           >
             SEARCH BY
           </label>,
-          <Button
-            className="widerButton btn btn-sm mr-3 btn-outline-dark"
+          <Styled(Button)
+            className="btn btn-sm mr-3 btn-outline-dark"
             clickHandler={undefined}
             label="TITLE"
           />,
-          <Button
-            className="widerButton btn btn-sm btn-dark"
+          <Styled(Button)
+            className="btn btn-sm btn-dark"
             clickHandler={undefined}
             label="GENRE"
           />,
-          <Button
-            className="widerButton btn btn-primary btn-sm float-right"
+          <Styled(Button)
+            className="btn btn-primary btn-sm float-right"
             clickHandler={
               [MockFunction] {
                 "calls": Array [
@@ -252,7 +252,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <input
+            "children": <styled.input
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
@@ -265,7 +265,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "form-control rounded-0 searchInput",
               "onChange": [Function],
@@ -275,7 +275,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           "type": "div",
         },
@@ -296,7 +296,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
+            "className": "btn btn-sm mr-3 btn-outline-dark",
             "clickHandler": undefined,
             "label": "TITLE",
           },
@@ -309,7 +309,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-sm btn-dark",
+            "className": "btn btn-sm btn-dark",
             "clickHandler": undefined,
             "label": "GENRE",
           },
@@ -322,7 +322,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-primary btn-sm float-right",
+            "className": "btn btn-primary btn-sm float-right",
             "clickHandler": [MockFunction] {
               "calls": Array [
                 Array [],
@@ -336,7 +336,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -369,7 +369,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
         <p
@@ -380,7 +380,7 @@ ShallowWrapper {
         <div
           className="input-group mb-3"
         >
-          <input
+          <styled.input
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
@@ -393,18 +393,18 @@ ShallowWrapper {
         >
           SEARCH BY
         </label>,
-        <Button
-          className="widerButton btn btn-sm mr-3 btn-dark"
+        <Styled(Button)
+          className="btn btn-sm mr-3 btn-dark"
           clickHandler={undefined}
           label="TITLE"
         />,
-        <Button
-          className="widerButton btn btn-sm btn-outline-dark"
+        <Styled(Button)
+          className="btn btn-sm btn-outline-dark"
           clickHandler={undefined}
           label="GENRE"
         />,
-        <Button
-          className="widerButton btn btn-primary btn-sm float-right"
+        <Styled(Button)
+          className="btn btn-primary btn-sm float-right"
           clickHandler={[MockFunction]}
           label="SEARCH"
           type="submit"
@@ -431,7 +431,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <input
+          "children": <styled.input
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
@@ -444,7 +444,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "className": "form-control rounded-0 searchInput",
             "onChange": [Function],
@@ -454,7 +454,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": "input",
+          "type": [Function],
         },
         "type": "div",
       },
@@ -475,7 +475,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-sm mr-3 btn-dark",
+          "className": "btn btn-sm mr-3 btn-dark",
           "clickHandler": undefined,
           "label": "TITLE",
         },
@@ -488,7 +488,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-sm btn-outline-dark",
+          "className": "btn btn-sm btn-outline-dark",
           "clickHandler": undefined,
           "label": "GENRE",
         },
@@ -501,7 +501,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "widerButton btn btn-primary btn-sm float-right",
+          "className": "btn btn-primary btn-sm float-right",
           "clickHandler": [MockFunction],
           "label": "SEARCH",
           "type": "submit",
@@ -511,13 +511,13 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <p
@@ -528,7 +528,7 @@ ShallowWrapper {
           <div
             className="input-group mb-3"
           >
-            <input
+            <styled.input
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
@@ -541,18 +541,18 @@ ShallowWrapper {
           >
             SEARCH BY
           </label>,
-          <Button
-            className="widerButton btn btn-sm mr-3 btn-dark"
+          <Styled(Button)
+            className="btn btn-sm mr-3 btn-dark"
             clickHandler={undefined}
             label="TITLE"
           />,
-          <Button
-            className="widerButton btn btn-sm btn-outline-dark"
+          <Styled(Button)
+            className="btn btn-sm btn-outline-dark"
             clickHandler={undefined}
             label="GENRE"
           />,
-          <Button
-            className="widerButton btn btn-primary btn-sm float-right"
+          <Styled(Button)
+            className="btn btn-primary btn-sm float-right"
             clickHandler={[MockFunction]}
             label="SEARCH"
             type="submit"
@@ -579,7 +579,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <input
+            "children": <styled.input
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
@@ -592,7 +592,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "form-control rounded-0 searchInput",
               "onChange": [Function],
@@ -602,7 +602,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           "type": "div",
         },
@@ -623,7 +623,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-sm mr-3 btn-dark",
+            "className": "btn btn-sm mr-3 btn-dark",
             "clickHandler": undefined,
             "label": "TITLE",
           },
@@ -636,7 +636,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-sm btn-outline-dark",
+            "className": "btn btn-sm btn-outline-dark",
             "clickHandler": undefined,
             "label": "GENRE",
           },
@@ -649,7 +649,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "widerButton btn btn-primary btn-sm float-right",
+            "className": "btn btn-primary btn-sm float-right",
             "clickHandler": [MockFunction],
             "label": "SEARCH",
             "type": "submit",
@@ -659,7 +659,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
