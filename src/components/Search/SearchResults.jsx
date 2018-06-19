@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 import NoResults from  './NoResults';
 import MovieCards from './MovieCards';
 
-import './searchresults.css';
-
 export default class SearchResults extends Component {
     constructor(props) {
         super(props);

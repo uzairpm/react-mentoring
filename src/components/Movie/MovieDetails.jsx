@@ -8,7 +8,6 @@ import Footer from '../Footer/Footer';
 import MovieBannerContainer from './containers/MovieBannerContainer';
 import SimilarMoviesContainer from './containers/SimilarMoviesContainer';
 import * as appActions from '../../actions';
-import './moviedetails.css';
 
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
