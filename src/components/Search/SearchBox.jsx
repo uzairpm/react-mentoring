@@ -1,3 +1,4 @@
+// @flow
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
@@ -17,7 +18,7 @@ const WiderButton = styled(Button)`
 export default class SearchBox extends Component {
     constructor(props) {
         super(props);
-        this._handleKeyPress = this._handleKeyPress.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
     }
     componentDidMount() {
         if (location.hash.indexOf('/search/') !== -1) {
@@ -29,7 +30,7 @@ export default class SearchBox extends Component {
             }
         }
     }
-    _handleKeyPress(e) {
+    handleKeyPress(e) {
         if (e.key === 'Enter') {
             this.props.searchClick();
         }
@@ -43,7 +44,7 @@ export default class SearchBox extends Component {
                         className="form-control rounded-0 searchInput"
                         onChange={(e) => this.props.valChange(e.target.value) }
                         value={ this.props.value }
-                        onKeyPress={this._handleKeyPress} />
+                        onKeyPress={this.handleKeyPress} />
                 </div>
                 <label className="mr-3">SEARCH BY</label>
                 <WiderButton label="TITLE"

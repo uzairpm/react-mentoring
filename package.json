@@ -12,7 +12,8 @@
         "test:coverage": "npm run test -- --coverage",
         "test:e2e": "concurrently --kill-others \"npm run start:dev\" \"cypress open\"",
         "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
-        "storybook": "start-storybook -p 9001 -c .storybook"
+        "storybook": "start-storybook -p 9001 -c .storybook",
+        "flow": "flow"
     },
     "jest": {
         "setupFiles": [
@@ -57,6 +58,7 @@
         "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "^1.1.1",
         "fetch-mock": "^6.3.0",
+        "flow-bin": "^0.74.0",
         "jest": "^22.4.3",
         "react-test-renderer": "^16.3.2",
         "redux-immutable-state-invariant": "^2.1.0",
