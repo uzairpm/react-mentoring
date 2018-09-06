@@ -20,6 +20,9 @@ ShallowWrapper {
       "children": "SEARCH",
       "className": "btn btn-primary btn-sm widerButton",
       "replace": false,
+      "style": Object {
+        "padding": "0.25rem 2rem !important",
+      },
       "to": "/",
     },
     "ref": null,
@@ -35,6 +38,9 @@ ShallowWrapper {
         "children": "SEARCH",
         "className": "btn btn-primary btn-sm widerButton",
         "replace": false,
+        "style": Object {
+          "padding": "0.25rem 2rem !important",
+        },
         "to": "/",
       },
       "ref": null,

@@ -1,11 +1,15 @@
 import React from 'react';
 
-import './footer.css';
+const navbarItemFooter = {
+    fontSize: '1.4rem',
+    fontWeight: 500,
+    color: '#fa6c85'
+};
 
 const Footer = (props) => (
     <footer className="container appFooter">
         <nav className="navbar navbar-dark bg-dark">
-            <span className="navbar-brand navbarItem">netflixroulette</span>
+            <span className="navbar-brand navbarItem" style={navbarItemFooter}>netflixroulette</span>
         </nav>
     </footer>
 );

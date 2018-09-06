@@ -41,6 +41,11 @@ ShallowWrapper {
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "borderBottom": "2px solid #fa6c85",
+              }
+            }
             type="text"
             value="mat"
           />
@@ -54,11 +59,21 @@ ShallowWrapper {
           className="widerButton btn btn-sm mr-3 btn-outline-dark"
           clickHandler={undefined}
           label="TITLE"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
         />,
         <Button
           className="widerButton btn btn-sm btn-dark"
           clickHandler={undefined}
           label="GENRE"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
         />,
         <Button
           className="widerButton btn btn-primary btn-sm float-right"
@@ -70,10 +85,19 @@ ShallowWrapper {
             }
           }
           label="SEARCH"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
           type="submit"
         />,
       ],
       "className": "jumbotron",
+      "style": Object {
+        "marginBottom": 0,
+        "padding": "1rem 1rem",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -98,6 +122,11 @@ ShallowWrapper {
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "borderBottom": "2px solid #fa6c85",
+              }
+            }
             type="text"
             value="mat"
           />,
@@ -112,6 +141,9 @@ ShallowWrapper {
             "className": "form-control rounded-0 searchInput",
             "onChange": [Function],
             "onKeyPress": [Function],
+            "style": Object {
+              "borderBottom": "2px solid #fa6c85",
+            },
             "type": "text",
             "value": "mat",
           },
@@ -141,6 +173,9 @@ ShallowWrapper {
           "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
           "clickHandler": undefined,
           "label": "TITLE",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
         },
         "ref": null,
         "rendered": null,
@@ -154,6 +189,9 @@ ShallowWrapper {
           "className": "widerButton btn btn-sm btn-dark",
           "clickHandler": undefined,
           "label": "GENRE",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
         },
         "ref": null,
         "rendered": null,
@@ -171,6 +209,9 @@ ShallowWrapper {
             ],
           },
           "label": "SEARCH",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
           "type": "submit",
         },
         "ref": null,
@@ -199,6 +240,11 @@ ShallowWrapper {
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
+              style={
+                Object {
+                  "borderBottom": "2px solid #fa6c85",
+                }
+              }
               type="text"
               value="mat"
             />
@@ -212,11 +258,21 @@ ShallowWrapper {
             className="widerButton btn btn-sm mr-3 btn-outline-dark"
             clickHandler={undefined}
             label="TITLE"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
           />,
           <Button
             className="widerButton btn btn-sm btn-dark"
             clickHandler={undefined}
             label="GENRE"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
           />,
           <Button
             className="widerButton btn btn-primary btn-sm float-right"
@@ -228,10 +284,19 @@ ShallowWrapper {
               }
             }
             label="SEARCH"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
             type="submit"
           />,
         ],
         "className": "jumbotron",
+        "style": Object {
+          "marginBottom": 0,
+          "padding": "1rem 1rem",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -256,6 +321,11 @@ ShallowWrapper {
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
+              style={
+                Object {
+                  "borderBottom": "2px solid #fa6c85",
+                }
+              }
               type="text"
               value="mat"
             />,
@@ -270,6 +340,9 @@ ShallowWrapper {
               "className": "form-control rounded-0 searchInput",
               "onChange": [Function],
               "onKeyPress": [Function],
+              "style": Object {
+                "borderBottom": "2px solid #fa6c85",
+              },
               "type": "text",
               "value": "mat",
             },
@@ -299,6 +372,9 @@ ShallowWrapper {
             "className": "widerButton btn btn-sm mr-3 btn-outline-dark",
             "clickHandler": undefined,
             "label": "TITLE",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -312,6 +388,9 @@ ShallowWrapper {
             "className": "widerButton btn btn-sm btn-dark",
             "clickHandler": undefined,
             "label": "GENRE",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -329,6 +408,9 @@ ShallowWrapper {
               ],
             },
             "label": "SEARCH",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
             "type": "submit",
           },
           "ref": null,
@@ -384,6 +466,11 @@ ShallowWrapper {
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "borderBottom": "2px solid #fa6c85",
+              }
+            }
             type="text"
             value="matrix"
           />
@@ -397,20 +484,39 @@ ShallowWrapper {
           className="widerButton btn btn-sm mr-3 btn-dark"
           clickHandler={undefined}
           label="TITLE"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
         />,
         <Button
           className="widerButton btn btn-sm btn-outline-dark"
           clickHandler={undefined}
           label="GENRE"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
         />,
         <Button
           className="widerButton btn btn-primary btn-sm float-right"
           clickHandler={[MockFunction]}
           label="SEARCH"
+          style={
+            Object {
+              "padding": "0.25rem 2rem",
+            }
+          }
           type="submit"
         />,
       ],
       "className": "jumbotron",
+      "style": Object {
+        "marginBottom": 0,
+        "padding": "1rem 1rem",
+      },
     },
     "ref": null,
     "rendered": Array [
@@ -435,6 +541,11 @@ ShallowWrapper {
             className="form-control rounded-0 searchInput"
             onChange={[Function]}
             onKeyPress={[Function]}
+            style={
+              Object {
+                "borderBottom": "2px solid #fa6c85",
+              }
+            }
             type="text"
             value="matrix"
           />,
@@ -449,6 +560,9 @@ ShallowWrapper {
             "className": "form-control rounded-0 searchInput",
             "onChange": [Function],
             "onKeyPress": [Function],
+            "style": Object {
+              "borderBottom": "2px solid #fa6c85",
+            },
             "type": "text",
             "value": "matrix",
           },
@@ -478,6 +592,9 @@ ShallowWrapper {
           "className": "widerButton btn btn-sm mr-3 btn-dark",
           "clickHandler": undefined,
           "label": "TITLE",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
         },
         "ref": null,
         "rendered": null,
@@ -491,6 +608,9 @@ ShallowWrapper {
           "className": "widerButton btn btn-sm btn-outline-dark",
           "clickHandler": undefined,
           "label": "GENRE",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
         },
         "ref": null,
         "rendered": null,
@@ -504,6 +624,9 @@ ShallowWrapper {
           "className": "widerButton btn btn-primary btn-sm float-right",
           "clickHandler": [MockFunction],
           "label": "SEARCH",
+          "style": Object {
+            "padding": "0.25rem 2rem",
+          },
           "type": "submit",
         },
         "ref": null,
@@ -532,6 +655,11 @@ ShallowWrapper {
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
+              style={
+                Object {
+                  "borderBottom": "2px solid #fa6c85",
+                }
+              }
               type="text"
               value="matrix"
             />
@@ -545,20 +673,39 @@ ShallowWrapper {
             className="widerButton btn btn-sm mr-3 btn-dark"
             clickHandler={undefined}
             label="TITLE"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
           />,
           <Button
             className="widerButton btn btn-sm btn-outline-dark"
             clickHandler={undefined}
             label="GENRE"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
           />,
           <Button
             className="widerButton btn btn-primary btn-sm float-right"
             clickHandler={[MockFunction]}
             label="SEARCH"
+            style={
+              Object {
+                "padding": "0.25rem 2rem",
+              }
+            }
             type="submit"
           />,
         ],
         "className": "jumbotron",
+        "style": Object {
+          "marginBottom": 0,
+          "padding": "1rem 1rem",
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -583,6 +730,11 @@ ShallowWrapper {
               className="form-control rounded-0 searchInput"
               onChange={[Function]}
               onKeyPress={[Function]}
+              style={
+                Object {
+                  "borderBottom": "2px solid #fa6c85",
+                }
+              }
               type="text"
               value="matrix"
             />,
@@ -597,6 +749,9 @@ ShallowWrapper {
               "className": "form-control rounded-0 searchInput",
               "onChange": [Function],
               "onKeyPress": [Function],
+              "style": Object {
+                "borderBottom": "2px solid #fa6c85",
+              },
               "type": "text",
               "value": "matrix",
             },
@@ -626,6 +781,9 @@ ShallowWrapper {
             "className": "widerButton btn btn-sm mr-3 btn-dark",
             "clickHandler": undefined,
             "label": "TITLE",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -639,6 +797,9 @@ ShallowWrapper {
             "className": "widerButton btn btn-sm btn-outline-dark",
             "clickHandler": undefined,
             "label": "GENRE",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
           },
           "ref": null,
           "rendered": null,
@@ -652,6 +813,9 @@ ShallowWrapper {
             "className": "widerButton btn btn-primary btn-sm float-right",
             "clickHandler": [MockFunction],
             "label": "SEARCH",
+            "style": Object {
+              "padding": "0.25rem 2rem",
+            },
             "type": "submit",
           },
           "ref": null,
