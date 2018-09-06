@@ -46,23 +46,21 @@ ShallowWrapper {
               className="col-sm-3 col-md-3 col-lg-3"
             >
               <img
-                className="img-fluid"
+                className="img-fluid rounded"
                 src=""
               />
             </div>
-            <div
-              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            <styled.div
+              className="col-sm-9 col-md-9 col-lg-9"
             >
-              <h4
-                className="movieTitle mr-3"
+              <styled.h4
+                className="mr-3"
               >
                 Feel Good
-              </h4>
-              <span
-                className="avgRating"
-              >
+              </styled.h4>
+              <styled.span>
                 8
-              </span>
+              </styled.span>
               <p
                 className="text-muted"
               >
@@ -81,12 +79,12 @@ ShallowWrapper {
                    mins
                 </b>
               </div>
-              <p
-                className="movieDesc mt-3"
+              <styled.p
+                className="mt-3"
               >
                 A feel good movie
-              </p>
-            </div>
+              </styled.p>
+            </styled.div>
           </div>
         </div>
       </div>,
@@ -108,23 +106,21 @@ ShallowWrapper {
               className="col-sm-3 col-md-3 col-lg-3"
             >
               <img
-                className="img-fluid"
+                className="img-fluid rounded"
                 src=""
               />
             </div>
-            <div
-              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            <styled.div
+              className="col-sm-9 col-md-9 col-lg-9"
             >
-              <h4
-                className="movieTitle mr-3"
+              <styled.h4
+                className="mr-3"
               >
                 Feel Good
-              </h4>
-              <span
-                className="avgRating"
-              >
+              </styled.h4>
+              <styled.span>
                 8
-              </span>
+              </styled.span>
               <p
                 className="text-muted"
               >
@@ -143,12 +139,12 @@ ShallowWrapper {
                    mins
                 </b>
               </div>
-              <p
-                className="movieDesc mt-3"
+              <styled.p
+                className="mt-3"
               >
                 A feel good movie
-              </p>
-            </div>
+              </styled.p>
+            </styled.div>
           </div>
         </div>,
         "className": "card text-white bg-dark",
@@ -166,23 +162,21 @@ ShallowWrapper {
               className="col-sm-3 col-md-3 col-lg-3"
             >
               <img
-                className="img-fluid"
+                className="img-fluid rounded"
                 src=""
               />
             </div>
-            <div
-              className="col-sm-9 col-md-9 col-lg-9 padding25"
+            <styled.div
+              className="col-sm-9 col-md-9 col-lg-9"
             >
-              <h4
-                className="movieTitle mr-3"
+              <styled.h4
+                className="mr-3"
               >
                 Feel Good
-              </h4>
-              <span
-                className="avgRating"
-              >
+              </styled.h4>
+              <styled.span>
                 8
-              </span>
+              </styled.span>
               <p
                 className="text-muted"
               >
@@ -201,12 +195,12 @@ ShallowWrapper {
                    mins
                 </b>
               </div>
-              <p
-                className="movieDesc mt-3"
+              <styled.p
+                className="mt-3"
               >
                 A feel good movie
-              </p>
-            </div>
+              </styled.p>
+            </styled.div>
           </div>,
           "className": "card-body",
         },
@@ -221,23 +215,21 @@ ShallowWrapper {
                 className="col-sm-3 col-md-3 col-lg-3"
               >
                 <img
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   src=""
                 />
               </div>,
-              <div
-                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              <styled.div
+                className="col-sm-9 col-md-9 col-lg-9"
               >
-                <h4
-                  className="movieTitle mr-3"
+                <styled.h4
+                  className="mr-3"
                 >
                   Feel Good
-                </h4>
-                <span
-                  className="avgRating"
-                >
+                </styled.h4>
+                <styled.span>
                   8
-                </span>
+                </styled.span>
                 <p
                   className="text-muted"
                 >
@@ -256,12 +248,12 @@ ShallowWrapper {
                      mins
                   </b>
                 </div>
-                <p
-                  className="movieDesc mt-3"
+                <styled.p
+                  className="mt-3"
                 >
                   A feel good movie
-                </p>
-              </div>,
+                </styled.p>
+              </styled.div>,
             ],
             "className": "row",
           },
@@ -273,7 +265,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <img
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   src=""
                 />,
                 "className": "col-sm-3 col-md-3 col-lg-3",
@@ -284,7 +276,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "img-fluid",
+                  "className": "img-fluid rounded",
                   "src": "",
                 },
                 "ref": null,
@@ -296,19 +288,17 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <h4
-                    className="movieTitle mr-3"
+                  <styled.h4
+                    className="mr-3"
                   >
                     Feel Good
-                  </h4>,
-                  <span
-                    className="avgRating"
-                  >
+                  </styled.h4>,
+                  <styled.span>
                     8
-                  </span>,
+                  </styled.span>,
                   <p
                     className="text-muted"
                   >
@@ -327,39 +317,38 @@ ShallowWrapper {
                        mins
                     </b>
                   </div>,
-                  <p
-                    className="movieDesc mt-3"
+                  <styled.p
+                    className="mt-3"
                   >
                     A feel good movie
-                  </p>,
+                  </styled.p>,
                 ],
-                "className": "col-sm-9 col-md-9 col-lg-9 padding25",
+                "className": "col-sm-9 col-md-9 col-lg-9",
               },
               "ref": null,
               "rendered": Array [
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "children": "Feel Good",
-                    "className": "movieTitle mr-3",
+                    "className": "mr-3",
                   },
                   "ref": null,
                   "rendered": "Feel Good",
-                  "type": "h4",
+                  "type": [Function],
                 },
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "children": 8,
-                    "className": "avgRating",
                   },
                   "ref": null,
                   "rendered": 8,
-                  "type": "span",
+                  "type": [Function],
                 },
                 Object {
                   "instance": null,
@@ -428,17 +417,17 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "children": "A feel good movie",
-                    "className": "movieDesc mt-3",
+                    "className": "mt-3",
                   },
                   "ref": null,
                   "rendered": "A feel good movie",
-                  "type": "p",
+                  "type": [Function],
                 },
               ],
-              "type": "div",
+              "type": [Function],
             },
           ],
           "type": "div",
@@ -468,23 +457,21 @@ ShallowWrapper {
                 className="col-sm-3 col-md-3 col-lg-3"
               >
                 <img
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   src=""
                 />
               </div>
-              <div
-                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              <styled.div
+                className="col-sm-9 col-md-9 col-lg-9"
               >
-                <h4
-                  className="movieTitle mr-3"
+                <styled.h4
+                  className="mr-3"
                 >
                   Feel Good
-                </h4>
-                <span
-                  className="avgRating"
-                >
+                </styled.h4>
+                <styled.span>
                   8
-                </span>
+                </styled.span>
                 <p
                   className="text-muted"
                 >
@@ -503,12 +490,12 @@ ShallowWrapper {
                      mins
                   </b>
                 </div>
-                <p
-                  className="movieDesc mt-3"
+                <styled.p
+                  className="mt-3"
                 >
                   A feel good movie
-                </p>
-              </div>
+                </styled.p>
+              </styled.div>
             </div>
           </div>
         </div>,
@@ -530,23 +517,21 @@ ShallowWrapper {
                 className="col-sm-3 col-md-3 col-lg-3"
               >
                 <img
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   src=""
                 />
               </div>
-              <div
-                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              <styled.div
+                className="col-sm-9 col-md-9 col-lg-9"
               >
-                <h4
-                  className="movieTitle mr-3"
+                <styled.h4
+                  className="mr-3"
                 >
                   Feel Good
-                </h4>
-                <span
-                  className="avgRating"
-                >
+                </styled.h4>
+                <styled.span>
                   8
-                </span>
+                </styled.span>
                 <p
                   className="text-muted"
                 >
@@ -565,12 +550,12 @@ ShallowWrapper {
                      mins
                   </b>
                 </div>
-                <p
-                  className="movieDesc mt-3"
+                <styled.p
+                  className="mt-3"
                 >
                   A feel good movie
-                </p>
-              </div>
+                </styled.p>
+              </styled.div>
             </div>
           </div>,
           "className": "card text-white bg-dark",
@@ -588,23 +573,21 @@ ShallowWrapper {
                 className="col-sm-3 col-md-3 col-lg-3"
               >
                 <img
-                  className="img-fluid"
+                  className="img-fluid rounded"
                   src=""
                 />
               </div>
-              <div
-                className="col-sm-9 col-md-9 col-lg-9 padding25"
+              <styled.div
+                className="col-sm-9 col-md-9 col-lg-9"
               >
-                <h4
-                  className="movieTitle mr-3"
+                <styled.h4
+                  className="mr-3"
                 >
                   Feel Good
-                </h4>
-                <span
-                  className="avgRating"
-                >
+                </styled.h4>
+                <styled.span>
                   8
-                </span>
+                </styled.span>
                 <p
                   className="text-muted"
                 >
@@ -623,12 +606,12 @@ ShallowWrapper {
                      mins
                   </b>
                 </div>
-                <p
-                  className="movieDesc mt-3"
+                <styled.p
+                  className="mt-3"
                 >
                   A feel good movie
-                </p>
-              </div>
+                </styled.p>
+              </styled.div>
             </div>,
             "className": "card-body",
           },
@@ -643,23 +626,21 @@ ShallowWrapper {
                   className="col-sm-3 col-md-3 col-lg-3"
                 >
                   <img
-                    className="img-fluid"
+                    className="img-fluid rounded"
                     src=""
                   />
                 </div>,
-                <div
-                  className="col-sm-9 col-md-9 col-lg-9 padding25"
+                <styled.div
+                  className="col-sm-9 col-md-9 col-lg-9"
                 >
-                  <h4
-                    className="movieTitle mr-3"
+                  <styled.h4
+                    className="mr-3"
                   >
                     Feel Good
-                  </h4>
-                  <span
-                    className="avgRating"
-                  >
+                  </styled.h4>
+                  <styled.span>
                     8
-                  </span>
+                  </styled.span>
                   <p
                     className="text-muted"
                   >
@@ -678,12 +659,12 @@ ShallowWrapper {
                        mins
                     </b>
                   </div>
-                  <p
-                    className="movieDesc mt-3"
+                  <styled.p
+                    className="mt-3"
                   >
                     A feel good movie
-                  </p>
-                </div>,
+                  </styled.p>
+                </styled.div>,
               ],
               "className": "row",
             },
@@ -695,7 +676,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <img
-                    className="img-fluid"
+                    className="img-fluid rounded"
                     src=""
                   />,
                   "className": "col-sm-3 col-md-3 col-lg-3",
@@ -706,7 +687,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "img-fluid",
+                    "className": "img-fluid rounded",
                     "src": "",
                   },
                   "ref": null,
@@ -718,19 +699,17 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "children": Array [
-                    <h4
-                      className="movieTitle mr-3"
+                    <styled.h4
+                      className="mr-3"
                     >
                       Feel Good
-                    </h4>,
-                    <span
-                      className="avgRating"
-                    >
+                    </styled.h4>,
+                    <styled.span>
                       8
-                    </span>,
+                    </styled.span>,
                     <p
                       className="text-muted"
                     >
@@ -749,39 +728,38 @@ ShallowWrapper {
                          mins
                       </b>
                     </div>,
-                    <p
-                      className="movieDesc mt-3"
+                    <styled.p
+                      className="mt-3"
                     >
                       A feel good movie
-                    </p>,
+                    </styled.p>,
                   ],
-                  "className": "col-sm-9 col-md-9 col-lg-9 padding25",
+                  "className": "col-sm-9 col-md-9 col-lg-9",
                 },
                 "ref": null,
                 "rendered": Array [
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
                       "children": "Feel Good",
-                      "className": "movieTitle mr-3",
+                      "className": "mr-3",
                     },
                     "ref": null,
                     "rendered": "Feel Good",
-                    "type": "h4",
+                    "type": [Function],
                   },
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
                       "children": 8,
-                      "className": "avgRating",
                     },
                     "ref": null,
                     "rendered": 8,
-                    "type": "span",
+                    "type": [Function],
                   },
                   Object {
                     "instance": null,
@@ -850,17 +828,17 @@ ShallowWrapper {
                   Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
                       "children": "A feel good movie",
-                      "className": "movieDesc mt-3",
+                      "className": "mt-3",
                     },
                     "ref": null,
                     "rendered": "A feel good movie",
-                    "type": "p",
+                    "type": [Function],
                   },
                 ],
-                "type": "div",
+                "type": [Function],
               },
             ],
             "type": "div",

@@ -18,8 +18,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": "SEARCH",
-      "className": "btn btn-primary btn-sm widerButton",
-      "replace": false,
+      "className": "btn btn-primary btn-sm",
       "to": "/",
     },
     "ref": null,
@@ -33,8 +32,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": "SEARCH",
-        "className": "btn btn-primary btn-sm widerButton",
-        "replace": false,
+        "className": "btn btn-primary btn-sm",
         "to": "/",
       },
       "ref": null,

@@ -23,12 +23,12 @@ ShallowWrapper {
         <nav
           className="navbar navbar-light"
         >
-          <a
-            className="navbar-brand navbarItem"
+          <styled.a
+            className="navbar-brand"
             href="#"
           >
             netflixroulette
-          </a>
+          </styled.a>
           <BackButton />
         </nav>,
         false,
@@ -43,12 +43,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <a
-              className="navbar-brand navbarItem"
+            <styled.a
+              className="navbar-brand"
               href="#"
             >
               netflixroulette
-            </a>,
+            </styled.a>,
             <BackButton />,
           ],
           "className": "navbar navbar-light",
@@ -58,15 +58,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "netflixroulette",
-              "className": "navbar-brand navbarItem",
+              "className": "navbar-brand",
               "href": "#",
             },
             "ref": null,
             "rendered": "netflixroulette",
-            "type": "a",
+            "type": [Function],
           },
           Object {
             "instance": null,
@@ -94,12 +94,12 @@ ShallowWrapper {
           <nav
             className="navbar navbar-light"
           >
-            <a
-              className="navbar-brand navbarItem"
+            <styled.a
+              className="navbar-brand"
               href="#"
             >
               netflixroulette
-            </a>
+            </styled.a>
             <BackButton />
           </nav>,
           false,
@@ -114,12 +114,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <a
-                className="navbar-brand navbarItem"
+              <styled.a
+                className="navbar-brand"
                 href="#"
               >
                 netflixroulette
-              </a>,
+              </styled.a>,
               <BackButton />,
             ],
             "className": "navbar navbar-light",
@@ -129,15 +129,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": "netflixroulette",
-                "className": "navbar-brand navbarItem",
+                "className": "navbar-brand",
                 "href": "#",
               },
               "ref": null,
               "rendered": "netflixroulette",
-              "type": "a",
+              "type": [Function],
             },
             Object {
               "instance": null,
@@ -189,12 +189,12 @@ ShallowWrapper {
         <nav
           className="navbar navbar-light"
         >
-          <a
-            className="navbar-brand navbarItem"
+          <styled.a
+            className="navbar-brand"
             href="#"
           >
             netflixroulette
-          </a>
+          </styled.a>
         </nav>,
         <Connect(withRouter(SearchBox)) />,
       ],
@@ -208,12 +208,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <a
-              className="navbar-brand navbarItem"
+            <styled.a
+              className="navbar-brand"
               href="#"
             >
               netflixroulette
-            </a>,
+            </styled.a>,
             false,
           ],
           "className": "navbar navbar-light",
@@ -223,15 +223,15 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "netflixroulette",
-              "className": "navbar-brand navbarItem",
+              "className": "navbar-brand",
               "href": "#",
             },
             "ref": null,
             "rendered": "netflixroulette",
-            "type": "a",
+            "type": [Function],
           },
           false,
         ],
@@ -259,12 +259,12 @@ ShallowWrapper {
           <nav
             className="navbar navbar-light"
           >
-            <a
-              className="navbar-brand navbarItem"
+            <styled.a
+              className="navbar-brand"
               href="#"
             >
               netflixroulette
-            </a>
+            </styled.a>
           </nav>,
           <Connect(withRouter(SearchBox)) />,
         ],
@@ -278,12 +278,12 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <a
-                className="navbar-brand navbarItem"
+              <styled.a
+                className="navbar-brand"
                 href="#"
               >
                 netflixroulette
-              </a>,
+              </styled.a>,
               false,
             ],
             "className": "navbar navbar-light",
@@ -293,15 +293,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": "netflixroulette",
-                "className": "navbar-brand navbarItem",
+                "className": "navbar-brand",
                 "href": "#",
               },
               "ref": null,
               "rendered": "netflixroulette",
-              "type": "a",
+              "type": [Function],
             },
             false,
           ],

@@ -1,12 +1,24 @@
+// @flow
 import React, {Component} from 'react';
+import styled from 'styled-components';
 
 import Button from '../Common/Button';
-import './searchbox.css';
+
+const Jumbotron = styled.div`
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+`;
+const SearchInput = styled.input`
+    border-bottom: 2px solid #fa6c85;
+`;
+const WiderButton = styled(Button)`
+    padding: 0.25rem 2rem;
+`;
 
 export default class SearchBox extends Component {
     constructor(props) {
         super(props);
-        this._handleKeyPress = this._handleKeyPress.bind(this);
+        this.handleKeyPress = this.handleKeyPress.bind(this);
     }
     componentDidMount() {
         if (location.hash.indexOf('/search/') !== -1) {
@@ -18,33 +30,33 @@ export default class SearchBox extends Component {
             }
         }
     }
-    _handleKeyPress(e) {
+    handleKeyPress(e) {
         if (e.key === 'Enter') {
             this.props.searchClick();
         }
     }
     render() {
         return (
-            <div className="jumbotron">
+            <Jumbotron className="jumbotron">
                 <p className="lead">FIND YOUR MOVIE</p>
                 <div className="input-group mb-3">
-                    <input type="text" 
+                    <SearchInput type="text" 
                         className="form-control rounded-0 searchInput"
                         onChange={(e) => this.props.valChange(e.target.value) }
                         value={ this.props.value }
-                        onKeyPress={this._handleKeyPress} />
+                        onKeyPress={this.handleKeyPress} />
                 </div>
                 <label className="mr-3">SEARCH BY</label>
-                <Button label="TITLE"
+                <WiderButton label="TITLE"
                     clickHandler={this.props.titleClick}
-                    className={"widerButton btn btn-sm mr-3 " + (this.props.titleActive ? 'btn-dark' : 'btn-outline-dark')}/>
-                <Button label="GENRE"
+                    className={"btn btn-sm mr-3 " + (this.props.titleActive ? 'btn-dark' : 'btn-outline-dark')}/>
+                <WiderButton label="GENRE"
                     clickHandler={this.props.genreClick}
-                    className={"widerButton btn btn-sm " + (this.props.titleActive ? 'btn-outline-dark' : 'btn-dark')}/>
-                <Button label="SEARCH" 
-                    className="widerButton btn btn-primary btn-sm float-right" 
+                    className={"btn btn-sm " + (this.props.titleActive ? 'btn-outline-dark' : 'btn-dark')}/>
+                <WiderButton label="SEARCH" 
+                    className="btn btn-primary btn-sm float-right" 
                     type="submit" clickHandler={this.props.searchClick}/>
-            </div>
+            </Jumbotron>
         );
     }
 }

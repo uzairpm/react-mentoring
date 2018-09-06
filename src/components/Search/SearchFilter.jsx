@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Button from '../Common/Button';
 
+const SearchFilterBar = styled.div`
+    padding: 5px 15px;
+`;
+
+
 const SearchFilter = (props) => (
     <div className="card">
-        <div className="searchFilterBar">
+        <SearchFilterBar>
             {props.resultCount} movies found
             <div className="float-right">
                 <label className="mr-3">Sort by</label>
@@ -16,7 +22,7 @@ const SearchFilter = (props) => (
                     clickHandler={props.ratingClick}
                     className={"btn btn-sm " + (props.releaseDate ? 'btn-light' : 'btn-dark')}/>
             </div>
-        </div>
+        </SearchFilterBar>
     </div>
 );
 
